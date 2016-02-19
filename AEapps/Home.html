@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AEapps | Home</title>
+    <script src="MasterScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="WebsiteCSS/WebsiteStyle.css" />
+    <link type="text/css" rel="stylesheet" href="WebsiteCSS/animate.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body onload="PageLoad()">
+    <h1 id="WebsiteTitle" class="animated TitleSlide">A<span style="color: #2E64FE;">E</span>a<span style="color: #2E64FE;">p</span>p<span style="color: #2E64FE;">s</span></h1>
+    <nav>
+        <div id="LinkDiv" style="display: inline;">
+            <h2 id="HomeLink" class="NavLink" onclick="ToHome();">Home</h2>
+            <h2 id="AppsLink" class="NavLink" onclick="ToOurApps();">Our Apps</h2>
+            <h2 id="AboutLink" class="NavLink" onclick="ToAboutUs();">About Us</h2>
+            <h2 id="ContactLink" class="NavLink" onclick="ToContactUs()">Contact Us</h2>
+        </div>
+
+        <div id="Icons" style="display: inline;">
+            <a href="https://play.google.com/store/apps/developer?id=AE+Studios" target="_blank"><img id="GooglePlayIcon" class="Icon animated slideInDown" src="Icons/GooglePlay.png" /></a>
+            <a href="http://www.youtube.com" target="_blank"><img id="YoutubeIcon" class="Icon animated slideInUp" src="Icons/Youtube.png" /></a>
+            <a href="http://www.github.com" target="_blank"><img id="GitHubIcon" class="Icon animated slideInDown" src="Icons/GitHub.png" /></a>
+        </div>
+        <hr />
+    </nav>
+
+    <div id="ImageLibrary">
+        <center>
+            <canvas id="SlideShowCanvas" class="SlideShow" height="400" width="750" />
+        </center>
+    </div>
+
+    <div id="Article">
+        <p align="center" class="animated zoomIn">
+            Welcome to AEapps! Here at AEapps, we give our best into createing the best games and applications
+            for everyone to use. You can download any of our applications by just clicking the "Our Apps" button at the top of the
+            page. We create apps and games for all devices such as phones, tablets, computers, and more. All our apps and games are
+            free of charge and will not even cost you a single penny! So while you're here on our website please feel free to take
+            a look around, after all it's not going to cost you anything!
+        </p>
+        <br />
+    </div>
+
+    <footer>
+        <hr />
+        <center>
+            <h1 id="WebsiteFooterTitle">A<span style="color: #2E64FE;">E</span>a<span style="color: #2E64FE;">p</span>p<span style="color: #2E64FE;">s</span></h1>
+
+            <form method="POST" action="../subscribe/subscribers_aeapps.net">
+                <table border="0" cellspacing="2" cellpadding="2" width="70%">
+                    <tbody>
+                        <tr>
+                            <td>Your email address:</td>
+                            <td>
+                                <input type="Text" name="email" size="30" value="">
+                            </td>
+                        <tr>
+                            <td bgcolor="#dddddd">Your name (optional):</td>
+                            <td><input type="Text" name="fullname" size="30" value=""></td>
+                        <tr>
+                            <td>
+                                Would you like to receive list mail batched in a daily
+                                digest?
+                            </td>
+                            <td>
+                                <input type="radio" name="digest" value="0" checked=""> No
+                                <input type="radio" name="digest" value="1">  Yes
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <center><input type="Submit" name="email-button" value="Subscribe"></center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </center>
+    </footer>
+</body>
+</html>
+
+<script type="text/javascript">
+    //the array with the path to the images
+    var image = null;
+    var canvas = null;
+    var currentImage = 0;
+    var contextForCanvas = null;
+    var ImageList = ["Images/tiger.jpg", "Images/city.jpg", "Images/desert.jpg"];
+
+    function PageLoad() {
+        //Takes Care Of Page Links
+        PageLinkColors();
+
+        //Image Library Stuff
+        canvas = document.getElementById("SlideShowCanvas");
+        contextForCanvas = canvas.getContext("2d");
+        image = document.createElement("img");
+        ImageSliding();
+    }
+
+    function ImageSliding() {
+        image.setAttribute("src", ImageList[currentImage]);
+        if (currentImage == ImageList.length - 1) {
+            currentImage = 0;
+        }
+
+        else {
+            currentImage++;
+        }
+
+        contextForCanvas.globalAlpha = 0.1;
+        setTimeout(ShowImage, 250);
+    }
+
+    function ShowImage() {
+        contextForCanvas.save();
+        contextForCanvas.drawImage(image, 0, 0, canvas.width, canvas.height);
+        contextForCanvas.globalAlpha += 0.1;
+
+        if (contextForCanvas.globalAlpha > 0.9) {
+            setTimeout(ImageSliding, 3500)
+        }
+
+        else {
+            setTimeout(ShowImage, 100);
+        }
+    }
+</script>
