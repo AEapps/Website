@@ -22,34 +22,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About Us.html" />
-    <Content Include="Contact Us.html" />
+    <Content Include="app.css" />
     <Content Include="Home.html" />
-    <Content Include="Images\desert.jpg" />
-    <Content Include="Images\MotherBoard.png" />
-    <Content Include="Images\PageLine.png" />
-    <Content Include="Images\River.jpg" />
-    <Content Include="Images\VexTimer.png" />
-    <Content Include="Icons\Android.png" />
-    <Content Include="Icons\AppleAppStore.png" />
-    <Content Include="Icons\Email.png" />
-    <Content Include="Icons\Facebook.png" />
-    <Content Include="Icons\GitHub.png" />
-    <Content Include="Icons\GooglePlay.png" />
-    <Content Include="Icons\HTML5.png" />
-    <Content Include="Icons\Instagram.png" />
-    <Content Include="Icons\Youtube.png" />
-    <Content Include="Javascript\MasterScript.js" />
-    <Content Include="IQTimerSounds\ChangeControllerSound.mp3" />
-    <Content Include="IQTimerSounds\EndGameSound.mp3" />
-    <Content Include="IQTimerSounds\StartGameSound.mp3" />
-    <Content Include="Notepad.html" />
-    <Content Include="Our Apps.html" />
-    <Content Include="VexIQTimer.html" />
     <Content Include="web.config" />
-    <Content Include="WebsiteCSS\animate.css" />
-    <Content Include="WebsiteCSS\Text.css" />
-    <Content Include="WebsiteCSS\WebsiteStyle.css" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
