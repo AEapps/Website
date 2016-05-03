@@ -1,0 +1,25 @@
+﻿img.ArticleImg {
+    vertical-align: text-top;
+    padding-right: 1em;
+    display: inline;
+    height: 350px;
+    width: 500px;
+    border-style: solid;
+}
+
+img.Icon {
+    width: 35px;
+    height: 35px;
+    float: right;
+    display: inline;
+    padding-right: .5em;
+}
+
+img.DownloadIcon {
+    width: 35px;
+    height: 35px;
+    display: inline;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: 0em;
+}
