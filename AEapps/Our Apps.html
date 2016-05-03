@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AEapps | Our Apps</title>
+    <script src="Javascript/MasterScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="WebsiteCSS/WebsiteStyle.css" />
+    <link type="text/css" rel="stylesheet" href="WebsiteCSS/animate.css" />
+    <link type="text/css" rel="stylesheet" href="WebsiteCSS/Text.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="pragma" content="no-cache" />
+</head>
+<body onload="PageLinkColors();">
+    <h1 id="WebsiteTitle" class="animated TitleSlide">A<span style="color: #2E64FE;">E</span>a<span style="color: #2E64FE;">p</span>p<span style="color: #2E64FE;">s</span></h1>
+    <nav>
+        <div id="LinkDiv" style="display: inline;">
+            <h2 id="HomeLink" class="NavLink" onclick="ChangePage('Home');">Home</h2>
+            <h2 id="AppsLink" class="NavLink" onclick="ChangePage('Our Apps');">Our Apps</h2>
+            <h2 id="AboutLink" class="NavLink" onclick="ChangePage('About Us');">About Us</h2>
+            <h2 id="ContactLink" class="NavLink" onclick="ChangePage('Contact Us')">Contact Us</h2>
+        </div>
+        <div id="Icons" style="display: inline;">
+            <a href="https://play.google.com/store/apps/developer?id=AE+Studios" target="_blank"><img id="GooglePlayIcon" class="Icon animated slideInDown" src="Icons/GooglePlay.png" /></a>
+            <a href="mailto:contactus@aeapps.net" target="_blank"><img id="EmailIcon" class="Icon animated slideInUp" src="Icons/Email.png" /></a>
+            <a href="http://www.github.com" target="_blank"><img id="GitHubIcon" class="Icon animated slideInDown" src="Icons/GitHub.png" /></a>
+        </div>
+        <hr />
+    </nav>
+
+    <div id="VexIQTimer">
+        <h2 class="AppTitle">Vex IQ Timer</h2>
+        <center>
+            <a href="http://aeapps.net/VexIQTimer.html" target="_blank"><img src="http://www.aeapps.net/Images/VexTimer.png" class="ArticleImg" /></a>
+            <p>The Vex IQ Timer is a timer app built especially for the 1:00 minute Vex IQ competition. It has different modes to run anything from a 0:15 second practice match to a full 1:00 minute match. The timer also keeps track of lapped times which are shown in the top left corner.</p>
+        </center>
+
+        <div id="Embed">
+            <center>
+                <p class="Blue">To Embed Our Timer Into Your Website:</p>
+                <textarea id="TextToEmbed" class="Notepad"><center><a href="http:www.aeapps.net"><h1><span style="color: #2E64FE; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">AEapps</span></h1></a><style>a {text-decoration: none;}</style><iframe src="http://www.aeapps.net/VexIQTimer.phtml" width="750" height="750"></iframe></center></textarea></center>
+        </div>
+
+        <div id="WaysToDownload">
+            <p class="Blue">How To Get The App:</p>
+            <a href="https://play.google.com/store/apps/details?id=com.aeapps.VexIQTimer.android" target="_blank"><img id="GooglePlayIcon" class="DownloadIcon" src="Icons/GooglePlay.png" /></a>
+            <a href="http://aeapps.net/VexIQTimer.html" target="_blank"><img id="GooglePlayIcon" class="DownloadIcon" src="Icons/HTML5.png" /></a>
+        </div>
+    </div>
+
+    <footer>
+        <hr />
+        <center>
+            <h1 id="WebsiteFooterTitle">A<span style="color: #2E64FE;">E</span>a<span style="color: #2E64FE;">p</span>p<span style="color: #2E64FE;">s</span></h1>
+            <br />
+            <center>
+                <form method="POST" action="http://aeapps.net/mailman/subscribe/newsletter_aeapps.net">
+                    <input class="Notepad" type="Text" name="email" value="" placeholder="Email">
+                    <input class="Notepad" type="Text" name="fullname" value="" placeholder="Full Name">
+                    <br />
+                    <br />
+                    <center><input class="Button" type="Submit" name="email-button" value="Subscribe"></center>
+                </form>
+            </center>
+        </center>
+    </footer>
+</body>
+</html>
