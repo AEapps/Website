@@ -40,6 +40,7 @@
     <Content Include="Icons\HTML5.png" />
     <Content Include="Icons\Instagram.png" />
     <Content Include="Icons\Youtube.png" />
+    <Content Include="Javascript\GameFiles\three.min.js" />
     <Content Include="Javascript\Home.js" />
     <Content Include="Javascript\MasterScript.js" />
     <Content Include="IQTimerSounds\ChangeControllerSound.mp3" />
@@ -66,6 +67,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
