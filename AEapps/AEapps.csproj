@@ -57,6 +57,7 @@
     <Content Include="WebsiteCSS\WebsiteStyle.css" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AEapps.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
