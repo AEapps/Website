@@ -24,6 +24,7 @@
   <ItemGroup>
     <Content Include="About Us.html" />
     <Content Include="Contact Us.html" />
+    <Content Include="GameExample.html" />
     <Content Include="Home.html" />
     <Content Include="Images\desert.jpg" />
     <Content Include="Images\MotherBoard.png" />

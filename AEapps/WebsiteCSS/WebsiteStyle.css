@@ -83,17 +83,21 @@ canvas.SlideShow {
 }
 
 canvas.GameWMouse {
-    width: 99.5%;
-    height: 99.5%;
+    position: absolute;
+    width: 99%;
+    height: 98%;
+
     background-color: #1C1C1C;
-    border: solid 5px #FFFFFF;
+    border: solid 3px #FFFFFF;
     cursor: initial;
 }
 
 canvas.GameNoMouse {
-    width: 99.5%;
-    height: 99.5%;
+    position: absolute;
+    width: 99%;
+    height: 98%;
+
     background-color: #1C1C1C;
-    border: solid 5px #FFFFFF;
+    border: solid 3px #FFFFFF;
     cursor: none;
 }
