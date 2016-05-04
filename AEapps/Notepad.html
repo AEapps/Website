@@ -16,9 +16,9 @@
 </head>
 <body onload="">
     <center>  
-        <textarea id="Notepad" class="Notepad"></textarea>
+        <textarea id="Notepad" class="Notepad" onkeydown="NotepadKeyEvents(this, event);"></textarea>
         <br />
-        <h2 id="HomeLink" class="WhiteNavLink" onclick="DownloadText('Notepad');">Download Text</h2>
+        <h2 id="HomeLink" class="WhiteNavLink" onclick="DownloadText(this);">Download Text</h2>
      </center>
 </body>
 </html>

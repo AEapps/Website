@@ -1,22 +1,51 @@
-﻿function DownloadText(TextBoxID) {
-    var textToWrite = document.getElementById(TextBoxID).value;
-    var TextFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-    var FileName = "Note.txt";
+﻿function DownloadText(TextBox) {
+    var CurrentDate = new Date();
+    var Day = CurrentDate.getDate();
+    var Month = CurrentDate.getMonth() + 1;
+    var Year = CurrentDate.getFullYear();
+    var DateText = Day + "/" + Month + "/" + Year;
 
-    var downloadLink = document.createElement("a");
-    downloadLink.download = FileName;
-    downloadLink.innerHTML = "Hidden Link";
+    SaveTextAsFile("Note " + DateText, TextBox.value);
+}
 
-    window.URL = window.URL || window.webkitURL;
+function SaveTextAsFile(fileNameToSaveAs, textToWrite) {
+    var ie = navigator.userAgent.match(/MSIE\s([\d.]+)/),
+        ie11 = navigator.userAgent.match(/Trident\/7.0/) && navigator.userAgent.match(/rv:11/),
+        ieEDGE = navigator.userAgent.match(/Edge/g),
+        ieVer = (ie ? ie[1] : (ie11 ? 11 : (ieEDGE ? 12 : -1)));
 
-    downloadLink.href = window.URL.createObjectURL(TextFileAsBlob);
-    downloadLink.onclick = destroyClickedElement;
-    downloadLink.style.display = "none";
-    document.body.appendChild(downloadLink);
+    if (ie && ieVer < 10) {
+        //Internet Explorer Version Is Less Than 10
+        alert("Cannot Download On Internet Explorer Version Less Than 10.")
+        return;
+    }
 
-    downloadLink.click();
+    var textFileAsBlob = new Blob([textToWrite], {type: 'text/plain'});
+
+    if (ieVer > -1) {
+        window.navigator.msSaveBlob(textFileAsBlob, fileNameToSaveAs);
+
+    }
+
+    else {
+        var downloadLink = document.createElement("a");
+        downloadLink.download = fileNameToSaveAs;
+        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+        downloadLink.onclick = function (e) { document.body.removeChild(e.target); };
+        downloadLink.style.display = "none";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+    }
 }
 
 function destroyClickedElement(event) {
     document.body.removeChild(event.target);
+}
+
+function NotepadKeyEvents(textArea, event) {
+    //Allow CTRL+S
+    if (event.keyCode == 83 && event.ctrlKey) {
+        event.preventDefault();
+        DownloadText(textArea);
+    }
 }
