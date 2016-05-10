@@ -5,7 +5,7 @@
     var Year = CurrentDate.getFullYear();
     var DateText = Day + "/" + Month + "/" + Year;
 
-    SaveTextAsFile("Note " + DateText, TextBox.value);
+    SaveTextAsFile("Note", TextBox.value);
 }
 
 function SaveTextAsFile(fileNameToSaveAs, textToWrite) {
