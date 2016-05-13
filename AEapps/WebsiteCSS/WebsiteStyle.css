@@ -16,8 +16,28 @@ textarea.Notepad {
     margin: auto;
     background: url(http://www.aeapps.net/Images/PageLine.png) repeat-y;
     width: 798px;
+    height: 75px;
     max-width: 798px;
+    font: normal 20px verdana;
+    line-height: 25px;
+    padding: 2px 10px;
+    color: #714D03;
+    resize: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -moz-user-select: all;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: all;
+}
+
+textarea.LargeNotepad {
+    border: none;
+    cursor: text;
+    margin: auto;
+    background: url(http://www.aeapps.net/Images/PageLine.png) repeat-y;
+    width: 798px;
     height: 750px;
+    max-width: 798px;
     font: normal 20px verdana;
     line-height: 25px;
     padding: 2px 10px;
