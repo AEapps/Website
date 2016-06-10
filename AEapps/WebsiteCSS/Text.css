@@ -36,16 +36,11 @@ h2 {
     padding-right: .5em;
 }
 
-p.AppDesc {
-    word-wrap: break-word;
-    text-align: center;
-    width: 1000px;
-}
-
 p.Desc{
+    text-align-last: center;
     word-wrap: break-word;
     text-align: justify;
-    width: 1000px;
+    width: 1100px;
 }
 
 p.Blue {
