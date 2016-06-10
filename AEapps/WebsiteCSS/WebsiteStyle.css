@@ -68,9 +68,15 @@ div.Notepad {
     border: 4px double #DEBB07;
 }
 
-div.Newsletter {
-    width: 500px;
+div.MedNewsletter {
+    width: 450px;
     padding: 6px;
+}
+
+div.SmallNewsletter{
+    width: 400px;
+    padding: 6px;
+    padding-top: 1%;
 }
 
 * {
