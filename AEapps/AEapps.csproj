@@ -24,7 +24,7 @@
   <ItemGroup>
     <Content Include="About Us.html" />
     <Content Include="Contact Us.html" />
-    <Content Include="GameExample.html" />
+    <Content Include="GamePageTemplate.html" />
     <Content Include="Home.html" />
     <Content Include="Icons\Andriod.png" />
     <Content Include="Images\desert.jpg" />
@@ -36,6 +36,7 @@
     <Content Include="Icons\GitHub.png" />
     <Content Include="Icons\GooglePlay.png" />
     <Content Include="Icons\HTML5.png" />
+    <Content Include="Javascript\GameFiles\Game.js" />
     <Content Include="Javascript\GameFiles\three.min.js" />
     <Content Include="Javascript\Home.js" />
     <Content Include="Javascript\MasterScript.js" />

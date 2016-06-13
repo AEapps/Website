@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>AEapps | Game Example</title>
+    <script src="Javascript/GameFiles/Game.js" type="text/javascript"></script>
     <script src="Javascript/MasterScript.js"></script>
     <script src="Javascript/Home.js"></script>
 
@@ -24,28 +25,18 @@
 
 <script>
     function LoadPage() {
-        var c = document.getElementById("GameCanvas");
-        var ctx = c.getContext("2d");
+        var CTX = LoadCanvas("GameCanvas").getContext('2d');
+
+        var thang = new Sprite("GameCanvas", "Images/MotherBoard.png");
+
+        thang.Location.X += 2000;
+        thang.Draw("GameCanvas", "Images/MotherBoard.png");
 
         // Red rectangle
-        ctx.beginPath();
-        ctx.lineWidth = "1";
-        ctx.strokeStyle = "red";
-        ctx.rect(5, 5, 290, 140);
-        ctx.stroke();
-
-        // Green rectangle
-        ctx.beginPath();
-        ctx.lineWidth = "4";
-        ctx.strokeStyle = "green";
-        ctx.rect(30, 30, 50, 50);
-        ctx.stroke();
-
-        // Blue rectangle
-        ctx.beginPath();
-        ctx.lineWidth = "10";
-        ctx.strokeStyle = "blue";
-        ctx.rect(50, 50, 150, 80);
-        ctx.stroke();
+        CTX.beginPath();
+        CTX.lineWidth = "1";
+        CTX.strokeStyle = "red";
+        CTX.rect(5, 5, 290, 140);
+        CTX.stroke();
     }
 </script>
