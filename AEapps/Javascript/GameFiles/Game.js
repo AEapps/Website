@@ -21,6 +21,7 @@ class Sprite {
         var CTX = LoadCanvas(CanvasName).getContext('2d');
         this.Location = VectorZero;
         this.Size = DefaultSize;
+        this.Context = CTX;
 
         var img = new Image();
         img.onload = function () {
@@ -28,18 +29,14 @@ class Sprite {
         }
         img.src = ImageSRC;
 
-        this.TextureSRC = ImageSRC;
+        this.Texture = img;
     }
 
-    Draw(CanvasName, ImageSRC) {
-        var CTX = LoadCanvas(CanvasName).getContext('2d');
-
-        var img = new Image();
+    Draw() {
+        var CTX = this.Context;
+        var img = this.Texture;
         var Bounds = this.Size;
         var Position = this.Location;
-        img.onload = function () {
-            CTX.drawImage(img, Position.X, Position.Y, Bounds.Width, Bounds.Height);
-        }
-        img.src = ImageSRC;
+        CTX.drawImage(img, Position.X, Position.Y, Bounds.Width, Bounds.Height);
     }
 }

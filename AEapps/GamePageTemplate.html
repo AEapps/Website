@@ -24,19 +24,45 @@
 </html>
 
 <script>
+    var Speed = 100;
+    var Paddle = new Sprite("GameCanvas", "Images/MotherBoard.png");
+    var Ball = new Sprite("GameCanvas", "Icons/Andriod.png");
+
     function LoadPage() {
-        var CTX = LoadCanvas("GameCanvas").getContext('2d');
+        var Canvas = LoadCanvas("GameCanvas");
 
-        var thang = new Sprite("GameCanvas", "Images/MotherBoard.png");
+        Paddle.Size.Width = 500;
+        Paddle.Size.Height = 50;
+        Paddle.Location.X = (Canvas.width - Paddle.Size.Width) / 2;
+        Paddle.Location.Y = Canvas.height - Paddle.Size.Height - 25;
+        Paddle.Draw();
 
-        thang.Location.X += 2000;
-        thang.Draw("GameCanvas", "Images/MotherBoard.png");
+        Ball.Location.X = Canvas.width / 2;
+        Ball.Location.Y = (Canvas.height - Ball.Size.Height) / 2;
+        Ball.Size.Width = 50;
+        Ball.Size.Height = 50;
+        Ball.Draw();
 
-        // Red rectangle
-        CTX.beginPath();
-        CTX.lineWidth = "1";
-        CTX.strokeStyle = "red";
-        CTX.rect(5, 5, 290, 140);
-        CTX.stroke();
+        document.onkeydown = function (e) {
+            var Canvas = LoadCanvas("GameCanvas");
+            var CTX = Canvas.getContext('2d');
+            CTX.clearRect(0, 0, Canvas.width, Canvas.height);
+
+            switch (e.keyCode) {
+                case 37:
+                    if (Paddle.Location.X > 0) {
+                        Paddle.Location.X -= Speed;
+                    }
+                    break;
+                case 39:
+                    if (Paddle.Location.X + Paddle.Size.Width < Canvas.width) {
+                        Paddle.Location.X += Speed;
+                    }
+                    break;
+            }
+
+            //Ball.Draw();
+            Paddle.Draw();
+        };
     }
 </script>
