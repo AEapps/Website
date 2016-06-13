@@ -29,6 +29,7 @@
     <Content Include="Icons\Andriod.png" />
     <Content Include="Images\desert.jpg" />
     <Content Include="Images\MotherBoard.png" />
+    <Content Include="Images\NotepadApp.png" />
     <Content Include="Images\PageLine.png" />
     <Content Include="Images\River.jpg" />
     <Content Include="Images\VexTimer.png" />

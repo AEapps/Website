@@ -17,11 +17,21 @@
     <meta http-equiv="pragma" content="no-cache" />
 </head>
 
-<body onload="">
+<body onload="setInterval(SetNotepadHeight, 10);">
     <center>
-        <textarea id="Notepad" class="LargeNotepad" onkeydown="NotepadKeyEvents(this, event);"></textarea>
-        <br />
-        <h2 id="HomeLink" class="WhiteNavLink" onclick="DownloadText(this);">Download Text</h2>
+        <textarea id="Notepad" class="LargeNotepad" spellcheck="true" onkeydown="NotepadKeyEvents(this, event);"></textarea>
     </center>
 </body>
 </html>
+
+<script>
+    function SetNotepadHeight() {
+        var body = document.body,
+        html = document.documentElement;
+
+        var Notepad = document.getElementById("Notepad");
+        var DocumentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+        Notepad.setAttribute("rows", (DocumentHeight - 25) / 25);
+    }
+</script>
