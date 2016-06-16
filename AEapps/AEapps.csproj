@@ -51,6 +51,7 @@
     <Content Include="VexIQTimer.html" />
     <Content Include="web.config" />
     <Content Include="WebsiteCSS\animate.css" />
+    <Content Include="WebsiteCSS\Balloon.css" />
     <Content Include="WebsiteCSS\Images.css" />
     <Content Include="WebsiteCSS\Inputs.css" />
     <Content Include="WebsiteCSS\Text.css" />
