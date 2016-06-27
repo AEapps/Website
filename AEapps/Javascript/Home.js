@@ -3,7 +3,7 @@ var image = null;
 var canvas = null;
 var currentImage = 0;
 var contextForCanvas = null;
-var ImageList = ["Images/MotherBoard.png", "Images/River.jpg", "Images/desert.jpg"];
+var ImageList = ["Images/LoversBeach.jpg", "Images/River.jpg", "Images/desert.jpg"];
 
 function PageLoad() {
     //Takes Care Of Page Links
