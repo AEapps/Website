@@ -22,40 +22,17 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About Us.html" />
-    <Content Include="Contact Us.html" />
-    <Content Include="GamePageTemplate.html" />
     <Content Include="Home.html" />
+    <Content Include="Icons\AEapps.png" />
     <Content Include="Icons\Andriod.png" />
-    <Content Include="Images\desert.jpg" />
-    <Content Include="Images\LoversBeach.jpg" />
-    <Content Include="Images\NotepadApp.png" />
-    <Content Include="Images\PageLine.png" />
-    <Content Include="Images\River.jpg" />
-    <Content Include="Images\VexTimer.png" />
-    <Content Include="Icons\Email.png" />
     <Content Include="Icons\GitHub.png" />
     <Content Include="Icons\GooglePlay.png" />
     <Content Include="Icons\HTML5.png" />
-    <Content Include="Javascript\GameFiles\Game.js" />
-    <Content Include="Javascript\GameFiles\three.min.js" />
-    <Content Include="Javascript\Home.js" />
-    <Content Include="Javascript\MasterScript.js" />
-    <Content Include="IQTimerSounds\ChangeControllerSound.mp3" />
-    <Content Include="IQTimerSounds\EndGameSound.mp3" />
-    <Content Include="IQTimerSounds\StartGameSound.mp3" />
-    <Content Include="Javascript\Notepad.js" />
-    <Content Include="Javascript\VexIQTimer.js" />
-    <Content Include="Notepad.html" />
-    <Content Include="Our Apps.html" />
-    <Content Include="VexIQTimer.html" />
     <Content Include="web.config" />
     <Content Include="WebsiteCSS\animate.css" />
     <Content Include="WebsiteCSS\Balloon.css" />
-    <Content Include="WebsiteCSS\Images.css" />
-    <Content Include="WebsiteCSS\Inputs.css" />
-    <Content Include="WebsiteCSS\Text.css" />
-    <Content Include="WebsiteCSS\WebsiteStyle.css" />
+    <Content Include="WebsiteCSS\MasterStyle.css" />
+    <Content Include="WebsiteCSS\materialize.min.css" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AEapps.pubxml" />

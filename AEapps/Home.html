@@ -1,75 +1,27 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <title>AEapps | Home</title>
-    <script src="Javascript/MasterScript.js"></script>
-    <script src="Javascript/Home.js"></script>
-
-    <link type="text/css" rel="stylesheet" href="WebsiteCSS/WebsiteStyle.css" />
-    <link type="text/css" rel="stylesheet" href="WebsiteCSS/Balloon.css" />
-    <link type="text/css" rel="stylesheet" href="WebsiteCSS/animate.css" />
-    <link type="text/css" rel="stylesheet" href="WebsiteCSS/Inputs.css" />
-    <link type="text/css" rel="stylesheet" href="WebsiteCSS/Images.css" />
-    <link type="text/css" rel="stylesheet" href="WebsiteCSS/Text.css" />
+    <link rel="stylesheet" type="text/css" href="WebsiteCSS/MasterStyle.css" />
+    <link rel="stylesheet" type="text/css" href="WebsiteCSS/materialize.min.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="pragma" content="no-cache" />
 </head>
-
-<body onload="PageLoad()">
-    <h1 id="WebsiteTitle" class="animated TitleSlide">A<span style="color: #2E64FE;">E</span>a<span style="color: #2E64FE;">p</span>p<span style="color: #2E64FE;">s</span></h1>
-    <nav>
-        <div id="LinkDiv" style="display: inline;">
-            <h2 id="HomeLink" class="NavLink" onclick="ChangePage('Home');">Home</h2>
-            <h2 id="AppsLink" class="NavLink" onclick="ChangePage('Our Apps');">Our Apps</h2>
-            <h2 id="AboutLink" class="NavLink" onclick="ChangePage('About Us');">About Us</h2>
-            <h2 id="ContactLink" class="NavLink" onclick="ChangePage('Contact Us')">Contact Us</h2>
+<body class="grey darken-4">
+    <nav class="grey darken-3">
+        <div class="nav-wrapper">
+            <img href="#" class="Title" src="Icons/AEapps.png" />
+            <ul id="desktop-navbar" class="right">
+                <li class="active"><a href="Home.html">Home</a></li>
+                <li><a href="badges.html">About Us</a></li>
+                <li><a href="collapsible.html">Contact</a></li>
+            </ul>
         </div>
-        <div id="Icons" style="display: inline;">
-            <a href="https://play.google.com/store/apps/dev?id=6241397451561932193" target="_blank"><img id="GooglePlayIcon" class="Icon animated slideInDown" src="Icons/GooglePlay.png" /></a>
-            <a href="mailto:contactus@aeapps.net" target="_blank"><img id="EmailIcon" class="Icon animated slideInUp" src="Icons/Email.png" /></a>
-            <a href="http://www.github.com" target="_blank"><img id="GitHubIcon" class="Icon animated slideInDown" src="Icons/GitHub.png" /></a>
-        </div>
-        <hr />
     </nav>
-    <div id="ImageLibrary">
-        <center>
-            <canvas id="SlideShowCanvas" class="SlideShow" height="400" width="750" />
-        </center>
-    </div>
+    <br />
 
-    <div id="Article">
-        <center>
-            <p class="animated zoomIn Desc">
-                Welcome to AEapps! Here at AEapps, we give our best into creating the best games and applications
-                for everyone to use. You can download any of our applications by just clicking the "Our Apps" button at the top of the
-                page. We create apps and games for all devices such as phones, tablets, computers, and more. All our apps and games are
-                free of charge! So while you're here on our website please feel free to take a look around, after all it's not going to cost you anything!
-            </p>
-            <br />
-        </center>
-    </div>
+    <div class="row container">
 
-    <footer>
-        <hr />
-        <center>
-            <h1 id="WebsiteFooterTitle">A<span style="color: #2E64FE;">E</span>a<span style="color: #2E64FE;">p</span>p<span style="color: #2E64FE;">s</span></h1>
-            <div class="FooterNewsletter">
-                <center>
-                    <form method="POST" action="http://aeapps.net/mailman/subscribe/newsletter_aeapps.net">
-                        <input class="Notepad" type="Text" required="required" name="email" value="" placeholder="Email">
-                        <input class="Notepad" type="Text" required="required" name="fullname" value="" placeholder="Full Name">
-                        <br />
-                        <br />
-                        <center>
-                            <input class="Button" type="Submit" name="email-button" value="Subscribe">
-                        </center>
-                    </form>
-                </center>
-            </div>
-        </center>
-    </footer>
+    </div>
 </body>
 </html>
