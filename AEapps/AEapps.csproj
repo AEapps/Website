@@ -22,9 +22,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
     <Content Include="Icons\AEapps.png" />
-    <Content Include="Icons\Andriod.png" />
+    <Content Include="Icons\Email.png" />
     <Content Include="Icons\GitHub.png" />
     <Content Include="Icons\GooglePlay.png" />
     <Content Include="Icons\HTML5.png" />
@@ -33,9 +34,15 @@
     <Content Include="WebsiteCSS\Balloon.css" />
     <Content Include="WebsiteCSS\MasterStyle.css" />
     <Content Include="WebsiteCSS\materialize.min.css" />
+    <Content Include="WebsiteJS\jquery-2.1.1.min.js" />
+    <Content Include="WebsiteJS\materialize.min.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AEapps.pubxml" />
+    <Content Include="Fonts\Asap-Bold.ttf" />
+    <Content Include="Fonts\Asap-BoldItalic.ttf" />
+    <Content Include="Fonts\Asap-Italic.ttf" />
+    <Content Include="Fonts\Asap-Regular.ttf" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
