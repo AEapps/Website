@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -34,15 +34,17 @@
     <Content Include="WebsiteCSS\Balloon.css" />
     <Content Include="WebsiteCSS\MasterStyle.css" />
     <Content Include="WebsiteCSS\materialize.min.css" />
+    <Content Include="WebsiteImages\Code.png" />
+    <Content Include="WebsiteImages\RobotCode.png" />
     <Content Include="WebsiteJS\jquery-2.1.1.min.js" />
     <Content Include="WebsiteJS\materialize.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AEapps.pubxml" />
     <Content Include="Fonts\Asap-Bold.ttf" />
     <Content Include="Fonts\Asap-BoldItalic.ttf" />
     <Content Include="Fonts\Asap-Italic.ttf" />
     <Content Include="Fonts\Asap-Regular.ttf" />
+    <None Include="AEapps.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
