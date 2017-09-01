@@ -22,18 +22,22 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OurApps.html" />
     <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
     <Content Include="Icons\AEapps.png" />
     <Content Include="Icons\Email.png" />
     <Content Include="Icons\GitHub.png" />
     <Content Include="Icons\GooglePlay.png" />
+    <Content Include="Icons\GooglePlayBadge.png" />
     <Content Include="Icons\HTML5.png" />
     <Content Include="web.config" />
     <Content Include="WebsiteCSS\animate.css" />
     <Content Include="WebsiteCSS\Balloon.css" />
     <Content Include="WebsiteCSS\MasterStyle.css" />
     <Content Include="WebsiteCSS\materialize.min.css" />
+    <Content Include="WebsiteImages\AppImages\RobotEscapeIcon.png" />
+    <Content Include="WebsiteImages\AppImages\RobotEscape.png" />
     <Content Include="WebsiteImages\Code.png" />
     <Content Include="WebsiteImages\RobotCode.png" />
     <Content Include="WebsiteJS\jquery-2.1.1.min.js" />
