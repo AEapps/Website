@@ -1,38 +1,22 @@
 ﻿@font-face {
-  font-family: 'Asap';
-  src: url('../Fonts/Asap-Bold.ttf');
-}
-html {
-    font-family: Asap;
-}
-body{
-    min-width: 750px;
+    font-family: 'Asap';
+    src: url('../Fonts/Asap-Bold.ttf');
 }
 
-img.Morph:hover {
-    border-radius: 50%;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+html {
+    font-family: Asap;
+    background-color: #202020;
 }
-img.Morph {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+
+.navbar {
+    background-color: #303030;
 }
-img.Title {
-    height: 100px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #424242;
-    border-top-style: none;
-    border-left-style: none;
+
+.nav-img{
+    max-width: 300px;
 }
-img.Icon {
-    width: 64px;
-    padding: 2%;
-    display: inline;
+
+.navbar-text {
+    font-family: Asap;
+    font-size: 20px;
 }
