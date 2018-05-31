@@ -17,15 +17,16 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Icons\AEapps-Icon.png" />
     <Content Include="OurApps.html" />
     <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
-    <Content Include="Icons\AEapps.png" />
     <Content Include="Icons\Email.png" />
     <Content Include="Icons\GitHub.png" />
     <Content Include="Icons\GooglePlay.png" />
