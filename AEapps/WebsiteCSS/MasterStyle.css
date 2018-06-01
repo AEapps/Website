@@ -8,15 +8,25 @@ html {
     background-color: #202020;
 }
 
-.navbar {
+.navbar-dark {
     background-color: #303030;
 }
 
-.nav-img{
-    max-width: 300px;
+.navbar-list {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-.navbar-text {
+ul.navbar-list li {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.nav-img {
+    max-width: 120px;
+}
+
+.nav-link {
+    font-size: 24px;
     font-family: Asap;
-    font-size: 20px;
 }

@@ -30,8 +30,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Fonts\OFL.txt" />
-    <Content Include="Icons\AEapps-Icon.png" />
     <Content Include="Home.html" />
+    <Content Include="Icons\AEapps-CircleIcon.png" />
     <Content Include="Icons\Email.png" />
     <Content Include="Icons\GitHub.png" />
     <Content Include="Icons\GooglePlay.png" />

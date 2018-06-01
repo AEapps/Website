@@ -12,11 +12,37 @@
     <link rel="stylesheet" type="text/css" href="WebsiteCSS/MasterStyle.css" />
 </head>
 <body>
-    <nav class="navbar nav-pills nav-fill">
-        <img class="nav-item nav-img" src="Icons/AEapps-Icon.png" />
-        <a class="navbar-text nav-link active" href="#">Home</a>
-        <a class="navbar-text nav-link" href="#">Our Apps</a>
-        <a class="navbar-text nav-link" href="#">Contact Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="navbar-nav ml-auto text-center navbar-list">
+                <li id="HomeNavBTN" class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li id="AppsNavBTN" class="nav-item">
+                    <a class="nav-link" href="#">Our Apps</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+            <a class="mx-auto" href="#">
+                <img src="\Icons\AEapps-CircleIcon.png" class="rounded-circle nav-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+            <ul class="navbar-nav mr-auto text-center navbar-list">
+                <li id="AboutNavBTN" class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li id="ContactNavBTN" class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!--
