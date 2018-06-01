@@ -3,20 +3,22 @@
     src: url('../Fonts/Asap-Bold.ttf');
 }
 
-html {
+/*Body Container Classes*/
+html, body, main {
+    color: #FFFFFF;
     font-family: Asap;
-    background-color: #202020;
+    background-color: #212121;
 }
 
+/*Navbar Classes And CSS*/
 .navbar-dark {
-    background-color: #303030;
+    background-color: #424242;
 }
 
 .navbar-list {
     padding-left: 2em;
     padding-right: 2em;
 }
-
 ul.navbar-list li {
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -25,8 +27,18 @@ ul.navbar-list li {
 .nav-img {
     max-width: 120px;
 }
-
 .nav-link {
     font-size: 24px;
     font-family: Asap;
+}
+
+/*Footer Classes*/
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: #FFFFFF;
+    line-height: 60px;
+    position: absolute;
+    background-color: #424242;
 }
