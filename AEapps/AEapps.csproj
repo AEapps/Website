@@ -23,6 +23,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.html" />
+    <Content Include="ContactUs.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -31,12 +33,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
-    <Content Include="Icons\AEapps-CircleIcon.png" />
-    <Content Include="Icons\Email.png" />
-    <Content Include="Icons\GitHub.png" />
-    <Content Include="Icons\GooglePlay.png" />
-    <Content Include="Icons\GooglePlayBadge.png" />
-    <Content Include="Icons\HTML5.png" />
+    <Content Include="WebsiteImages\AEapps-SloganIcon.png" />
+    <Content Include="WebsiteImages\Icons\AEapps-CircleIcon.png" />
+    <Content Include="WebsiteImages\Icons\GitHub.png" />
+    <Content Include="WebsiteImages\Icons\GooglePlay.png" />
+    <Content Include="WebsiteImages\Icons\GooglePlayBadge.png" />
+    <Content Include="WebsiteImages\Icons\HTML5.png" />
     <Content Include="Fonts\Asap-Bold.ttf" />
     <Content Include="Fonts\Asap-BoldItalic.ttf" />
     <Content Include="Fonts\Asap-Italic.ttf" />
@@ -47,6 +49,9 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WebsiteImages\Icons\Instagram.png" />
+    <Content Include="WebsiteImages\Icons\Twitter.png" />
+    <Content Include="WebsiteJS\MasterPages.js" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />

@@ -3,11 +3,29 @@
     src: url('../Fonts/Asap-Bold.ttf');
 }
 
-/*Body Container Classes*/
+/*Body, Main, Footer Classes*/
 html, body, main {
     color: #FFFFFF;
     font-family: Asap;
     background-color: #212121;
+}
+
+main {
+    padding: 25px 10px;
+}
+
+footer.footer {
+    padding: 10px;
+    background-color: #424242;
+}
+
+div.footer {
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    line-height: 60px;
+    padding-top: 75px; /*THIS MAY NEED SOME EDITING*/
+    position: absolute;
 }
 
 /*Navbar Classes And CSS*/
@@ -19,26 +37,50 @@ html, body, main {
     padding-left: 2em;
     padding-right: 2em;
 }
+
 ul.navbar-list li {
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
 
 .nav-img {
-    max-width: 120px;
+    max-width: 110px;
 }
+
 .nav-link {
     font-size: 24px;
     font-family: Asap;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-/*Footer Classes*/
-.footer {
-    bottom: 0;
+    .nav-link.active {
+        background-color: transparent !important;
+    }
+
+/*Card, Image, And Form Classes*/
+.card-dark {
+    padding: 10px;
+    background-color: #323232;
+}
+
+.BodyImage {
     width: 100%;
-    height: 60px;
+}
+
+blockquote {
+    color: #2966B1;
+}
+
+.blockquote-footer {
     color: #FFFFFF;
-    line-height: 60px;
-    position: absolute;
-    background-color: #424242;
+}
+
+a.IconBTN {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form.centered {
+    display: table-cell;
+    text-align: center;
 }
