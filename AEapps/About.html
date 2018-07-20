@@ -1,20 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>AEapps | Home</title>
+    <title>AEapps | About</title>
 
     <!--Add The Meta Data-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Add The Stylesheets-->
-    <link rel="stylesheet" href="Content/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="WebsiteCSS/ToxCSS/tox-progress.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="WebsiteCSS/MasterStyle.css" />
 
     <!--Add The Javascript-->
     <script src="/Scripts/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="/Scripts/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="WebsiteJS/ProgressBarLoadUp.js"></script>
+    <script src="WebsiteJS/tox-progress.min.js"></script>
     <script src="WebsiteJS/MasterPages.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,6 +30,13 @@
         gtag('config', 'UA-70949264-1');
     </script>
 
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            LoadUpValues();
+            ToxProgress.create();
+            ToxProgress.animate();
+        });
+    </script>
 </head>
 <body onload="UpdateCurrentPage();">
     <header>
@@ -65,29 +75,73 @@
     </header>
 
     <main role="main" class="container">
-        <div id="FeatureApp">
-            <div class="card flex-row flex-wrap">
-                <div class="card-header border-0">
-                    <img class="AppIcon" src="/WebsiteImages/AppImages/CongressCompanion.png">
-                </div>
-
-                <div class="card-block px-2">
-                    <h3 class="card-title">Congress Companion</h3>
-                    <p class="card-text">The perfect contact list for all your Local, State, and Federal United States representatives.</p>
-                </div>
-
-                <div class="card-footer w-100 text-muted">
-                    <img class="XamarinLogo" alt="Made With Xamarin" src="WebsiteImages/Logos/XamarinLogo.png" />
-
-                    <a href="https://play.google.com/store/apps/details?id=com.aeapps.CongressCompanion&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
-                        <img class="GooglePlayBadge" alt="Get It On Google Play" src="WebsiteImages/Icons/GooglePlayBadge.png" />
-                    </a>
-                </div>
-            </div>
+        <div id="SmallBio" class="justify-content-center" style="padding-bottom: 4%;">
+            <h3>Amitai Erfanian</h3>
+            <p class="Description">
+                If you're in a hurry to write your bio, and most people are, just use my easy fill-in-the-blank bio template,
+                included in my e-book, and write your bio quickly, easily and with confidence. You can spend more time on it
+                if you want, but you don't have to!Use this template to get you off to a quick start, and walk you step-by-step
+                through the bio writing process. You'll be amazed by how easy it is, and by how quickly your bio comes together.
+                If you're in a hurry to write your bio, and most people are, just use my easy fill-in-the-blank bio template,
+                included in my e-book, and write your bio quickly, easily and with confidence. You can spend more time on it
+                if you want, but you don't have to!Use this template to get you off to a quick start, and walk you step-by-step
+                through the bio writing process. You'll be amazed by how easy it is, and by how quickly your bio comes together.
+            </p>
         </div>
 
-        <div>
+        <div id="ExpirienceDiagram" class="card card-dark row" style="padding: 1%;">
+            <center>
+                <h3 id="ExpirienceLBL" class="card-title"></h3>
+            </center>
 
+            <div id="ExpirienceBar" class="container card-body">
+                <div class="row">
+                    <div class="col Spaced">
+                        <!--HTML-->
+                        <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="100" IntroYear="2016" data-speed="500">
+                            <div class="tox-progress-content" data-vcenter="true">
+                                <img width="100" style="margin: auto; width: 50%;" src="WebsiteImages/Icons/ProgrammingLangs/HTML5.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col Spaced">
+                        <!--Java-->
+                        <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="125" IntroYear="2015" data-speed="500">
+                            <div class="tox-progress-content" data-vcenter="true">
+                                <img width="100" style="margin: auto; width: 50%;" src="WebsiteImages/Icons/ProgrammingLangs/Java.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col Spaced">
+                        <!--C#-->
+                        <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="175" IntroYear="2014" data-speed="500">
+                            <div class="tox-progress-content" data-vcenter="true">
+                                <img width="100" style="margin: auto; width: 50%;" src="WebsiteImages/Icons/ProgrammingLangs/CSharp.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col Spaced">
+                        <!--C++-->
+                        <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="125" IntroYear="2017" data-speed="500">
+                            <div class="tox-progress-content" data-vcenter="true">
+                                <img width="100" style="margin: auto; width: 50%;" src="WebsiteImages/Icons/ProgrammingLangs/CPlusPlus.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col Spaced">
+                        <!--Javascript-->
+                        <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="100" IntroYear="2016" data-speed="500">
+                            <div class="tox-progress-content" data-vcenter="true">
+                                <img width="100" style="margin: auto; width: 50%;" src="WebsiteImages/Icons/ProgrammingLangs/Javascript.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
