@@ -8,11 +8,11 @@
             NavEnabledBTN = document.getElementById("HomeNavBTN");
             FooterEnabledBTN = document.getElementById("HomeFooterBTN");
             break;
-        case "about us":
+        case "about":
             NavEnabledBTN = document.getElementById("AboutNavBTN");
             FooterEnabledBTN = document.getElementById("AboutFooterBTN");
             break;
-        case "contact us":
+        case "contact":
             NavEnabledBTN = document.getElementById("ContactNavBTN");
             FooterEnabledBTN = document.getElementById("ContactFooterBTN");
             break;

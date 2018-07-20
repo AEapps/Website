@@ -11,7 +11,11 @@ html, body, main {
 }
 
 main {
+    width: 100%;
     padding: 25px 10px;
+    padding-bottom: 3%;
+    margin: auto !important;
+    max-width: 1250px !important;
 }
 
 footer.footer {
@@ -58,17 +62,37 @@ ul.navbar-list li {
     }
 
 /*Card, Image, And Form Classes*/
-.card-dark {
-    padding: 10px;
+.card {
     background-color: #323232;
 }
 
-.BodyImage {
-    width: 100%;
+.card-block {
+    margin: 15px;
+}
+
+img.AppIcon {
+    width: 200px;
+    height: 200px;
+}
+
+img.XamarinLogo {
+    width: 200px;
+    height: auto;
+    float: left
+}
+
+img.GooglePlayBadge {
+    width: 200px;
+    height: auto;
+    float: right;
 }
 
 blockquote {
     color: #2966B1;
+}
+
+p.Description {
+    font-size: 18px;
 }
 
 .blockquote-footer {
@@ -80,7 +104,13 @@ a.IconBTN {
     padding-right: 10px;
 }
 
-form.centered {
-    display: table-cell;
-    text-align: center;
+/*Grid Specialized CSS*/
+.col.Spaced {
+    padding: 3%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.tox-progress {
+    margin: auto;
 }
