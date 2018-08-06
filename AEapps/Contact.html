@@ -27,6 +27,13 @@
         gtag('config', 'UA-70949264-1');
     </script>
 
+    <!--ReCapatcha Code-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        var onloadCallback = function () {
+            alert("grecaptcha is ready!");
+        };
+    </script>
 </head>
 <body onload="UpdateCurrentPage();">
     <header>
@@ -37,7 +44,7 @@
                         <a id="HomeNavBTN" class="nav-link" href="Home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="AppsNavBTN" class="nav-link" href="#">Our Apps</a>
+                        <a id="AppsNavBTN" class="nav-link" href="OurApps.html">Our Apps</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +72,41 @@
     </header>
 
     <main role="main" class="container">
+        <form id="RequestForm" method="post" action="">
+            <div class="form-group row m-3">
+                <div class="form-group col">
+                    <label for="FullNameTXTBox">First Name:</label>
+                    <input type="text" class="form-control" name="Full Name:" placeholder="First Name" />
+                </div>
 
+                <div class="form-group col">
+                    <label for="FullNameTXTBox">Last Name:</label>
+                    <input type="text" class="form-control" placeholder="Last name" />
+                </div>
+            </div>
+
+            <div class="form-group row m-3">
+                <div class="form-group col">
+                    <label for="EmailTXTBox">Email: </label>
+                    <input type="email" class="form-control" name="Email:" placeholder="email@example.com" />
+                </div>
+
+                <div class="form-group col">
+                    <label for="EmailTXTBox">Request Details: </label>
+                    <textarea type="text" class="form-control" name="Request:" maxlength="500" rows="4" placeholder="Tell Us What To Build..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row m-3">
+                <div class="form-group col">
+                    <div class="g-recaptcha" data-theme="dark" data-sitekey="6Lcv_WUUAAAAANaEH0lusoG5b_yOd_iFINv8tJfY"></div>
+                </div>
+
+                <div class="form-group col">
+                    <button class="btn-lg btn-primary float-right" style="margin-top: 4%;" type="submit" onclick="SendRequest();">Send Request</button>
+                </div>
+            </div>
+        </form>
     </main>
 
     <div class="container-fluid footer">
@@ -73,27 +114,26 @@
             <div class="card-deck">
                 <div class="card card-dark">
                     <div class="card-body">
-                        <h5 class="card-title">Newsletter</h5>
-                        <center>
-                            <form class="form-inline centered">
-                                <label class="sr-only" for="NewsletterEmailTxtBox">Email</label>
-                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox" placeholder="email@example.com">
+                        <h5 class="card-title">Subscribe Newsletter</h5>
+                        <form class="form-inline" style="display: inline;">
+                            <label class="sr-only" for="NewsletterEmailTxtBox">Email</label>
+                            <center>
+                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox" placeholder="Email . . .">
                                 <button type="submit" class="btn-lg btn-primary mb-2" onclick="NewsletterSignUp();">Sign Up</button>
-                            </form>
-                        </center>
+                            </center>
+                        </form>
                     </div>
                 </div>
 
                 <div class="card card-dark">
                     <div class="card-body">
                         <h5 class="card-title">Menu</h5>
-
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item">
                                 <a id="HomeFooterBTN" class="nav-link" href="Home.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a id="AppsFooterBTN" class="nav-link" href="#">Our Apps</a>
+                                <a id="AppsFooterBTN" class="nav-link" href="OurApps.html">Our Apps</a>
                             </li>
                             <li class="nav-item">
                                 <a id="AboutFooterBTN" class="nav-link" href="About.html">About</a>
