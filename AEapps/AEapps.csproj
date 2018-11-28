@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <OutputPath>bin</OutputPath>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
@@ -18,6 +18,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <Use64BitIISExpress />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -32,9 +33,12 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Fonts\OFL.txt" />
+    <Content Include="GameTemplate.html" />
     <Content Include="Home.html" />
+    <Content Include="OurApps.html" />
     <Content Include="WebsiteCSS\ToxCSS\style.css" />
     <Content Include="WebsiteCSS\ToxCSS\tox-progress.css" />
+    <Content Include="WebsiteImages\AppImages\VexIQTimer.png" />
     <Content Include="WebsiteImages\Icons\ProgrammingLangs\CPlusPlus.png" />
     <Content Include="WebsiteImages\Icons\ProgrammingLangs\CSharp.png" />
     <Content Include="WebsiteImages\Icons\ProgrammingLangs\HTML5.png" />

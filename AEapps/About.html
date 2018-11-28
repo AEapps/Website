@@ -2,16 +2,13 @@
 <html>
 <head>
     <title>AEapps | About</title>
-
     <!--Add The Meta Data-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!--Add The Stylesheets-->
     <link rel="stylesheet" href="/Content/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="WebsiteCSS/ToxCSS/tox-progress.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="WebsiteCSS/MasterStyle.css" />
-
     <!--Add The Javascript-->
     <script src="/Scripts/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,7 +16,6 @@
     <script src="WebsiteJS/ProgressBarLoadUp.js"></script>
     <script src="WebsiteJS/tox-progress.min.js"></script>
     <script src="WebsiteJS/MasterPages.js"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70949264-1"></script>
     <script>
@@ -29,7 +25,6 @@
 
         gtag('config', 'UA-70949264-1');
     </script>
-
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             LoadUpValues();
@@ -47,11 +42,10 @@
                         <a id="HomeNavBTN" class="nav-link" href="Home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="AppsNavBTN" class="nav-link" href="#">Our Apps</a>
+                        <a id="AppsNavBTN" class="nav-link" href="OurApps.html">Our Apps</a>
                     </li>
                 </ul>
             </div>
-
             <div class="mx-auto my-2 order-0 order-md-1 position-relative">
                 <a class="mx-auto" href="/Home.html">
                     <img src="/WebsiteImages/Icons/AEapps-CircleIcon.png" class="rounded-circle nav-img">
@@ -60,7 +54,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-
             <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
                 <ul class="navbar-nav mr-auto text-center navbar-list">
                     <li class="nav-item">
@@ -73,7 +66,6 @@
             </div>
         </nav>
     </header>
-
     <main role="main" class="container">
         <div id="SmallBio" class="justify-content-center" style="padding-bottom: 4%;">
             <h3>Amitai Erfanian</h3>
@@ -88,12 +80,10 @@
                 through the bio writing process. You'll be amazed by how easy it is, and by how quickly your bio comes together.
             </p>
         </div>
-
-        <div id="ExpirienceDiagram" class="card card-dark row" style="padding: 1%;">
+        <div id="ExpirienceDiagram" class="card card-dark row d-none d-lg-block" style="padding: 1%;">
             <center>
                 <h3 id="ExpirienceLBL" class="card-title"></h3>
             </center>
-
             <div id="ExpirienceBar" class="container card-body">
                 <div class="row">
                     <div class="col Spaced">
@@ -104,7 +94,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col Spaced">
                         <!--Java-->
                         <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="125" IntroYear="2015" data-speed="500">
@@ -113,7 +102,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col Spaced">
                         <!--C#-->
                         <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="175" IntroYear="2014" data-speed="500">
@@ -122,7 +110,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col Spaced">
                         <!--C++-->
                         <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="125" IntroYear="2017" data-speed="500">
@@ -131,7 +118,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col Spaced">
                         <!--Javascript-->
                         <div class="tox-progress" data-thickness="12" data-color="#2A66B0" data-background="#424242" data-size="100" IntroYear="2016" data-speed="500">
@@ -144,33 +130,30 @@
             </div>
         </div>
     </main>
-
     <div class="container-fluid footer">
         <footer class="footer mt-0">
             <div class="card-deck">
                 <div class="card card-dark">
                     <div class="card-body">
-                        <h5 class="card-title">Newsletter</h5>
-                        <center>
-                            <form class="form-inline centered">
-                                <label class="sr-only" for="NewsletterEmailTxtBox">Email</label>
-                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox" placeholder="email@example.com">
+                        <h5 class="card-title">Subscribe Newsletter</h5>
+                        <form class="form-inline" style="display: inline;">
+                            <label class="sr-only" for="NewsletterEmailTxtBox">Email</label>
+                            <center>
+                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox" placeholder="Email . . .">
                                 <button type="submit" class="btn-lg btn-primary mb-2" onclick="NewsletterSignUp();">Sign Up</button>
-                            </form>
-                        </center>
+                            </center>
+                        </form>
                     </div>
                 </div>
-
                 <div class="card card-dark">
                     <div class="card-body">
                         <h5 class="card-title">Menu</h5>
-
                         <ul class="nav nav-pills nav-fill">
                             <li class="nav-item">
                                 <a id="HomeFooterBTN" class="nav-link" href="Home.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a id="AppsFooterBTN" class="nav-link" href="#">Our Apps</a>
+                                <a id="AppsFooterBTN" class="nav-link" href="OurApps.html">Our Apps</a>
                             </li>
                             <li class="nav-item">
                                 <a id="AboutFooterBTN" class="nav-link" href="About.html">About</a>
@@ -181,7 +164,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="card card-dark">
                     <div class="card-body">
                         <h5 class="card-title">Follow Us</h5>
