@@ -64,6 +64,12 @@ ul.navbar-list li {
     background-color: #323232;
 }
 
+.HorizSmallCard {
+    flex: none !important;
+    width: 350px !important;
+    height: 475px !important;
+}
+
 .card-block {
     margin: 15px;
 }
