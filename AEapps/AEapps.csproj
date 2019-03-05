@@ -33,7 +33,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Fonts\OFL.txt" />
-    <Content Include="GameTemplate.html" />
     <Content Include="Home.html" />
     <Content Include="OurApps.html" />
     <Content Include="WebsiteCSS\ToxCSS\style.css" />
