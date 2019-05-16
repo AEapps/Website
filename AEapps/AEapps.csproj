@@ -34,15 +34,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
-    <Content Include="OurApps.html" />
-    <Content Include="WebsiteCSS\ToxCSS\style.css" />
-    <Content Include="WebsiteCSS\ToxCSS\tox-progress.css" />
+    <Content Include="Apps.html" />
+    <Content Include="WebsiteCSS\Perico.min.css" />
     <Content Include="WebsiteImages\AppImages\VexIQTimer.png" />
-    <Content Include="WebsiteImages\Icons\ProgrammingLangs\CPlusPlus.png" />
-    <Content Include="WebsiteImages\Icons\ProgrammingLangs\CSharp.png" />
-    <Content Include="WebsiteImages\Icons\ProgrammingLangs\HTML5.png" />
-    <Content Include="WebsiteImages\Icons\ProgrammingLangs\Java.png" />
-    <Content Include="WebsiteImages\Icons\ProgrammingLangs\Javascript.png" />
     <Content Include="WebsiteImages\Logos\AEapps-SloganIcon.png" />
     <Content Include="WebsiteImages\AppImages\CongressCompanion.png" />
     <Content Include="WebsiteImages\Icons\AEapps-CircleIcon.png" />
@@ -62,8 +56,7 @@
     <Content Include="WebsiteImages\Icons\Clickables\Instagram.png" />
     <Content Include="WebsiteImages\Logos\XamarinLogo.png" />
     <Content Include="WebsiteJS\MasterPages.js" />
-    <Content Include="WebsiteJS\ProgressBarLoadUp.js" />
-    <Content Include="WebsiteJS\tox-progress.min.js" />
+    <Content Include="WebsiteJS\YearLabelUpdate.js" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -96,17 +89,6 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="web.config" />
     <Content Include="WebsiteCSS\MasterStyle.css" />
-    <Content Include="WebsiteCSS\ToxCSS\style.css.map" />
-    <Content Include="WebsiteCSS\ToxCSS\style.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\tox-progress.css.map" />
-    <Content Include="WebsiteCSS\ToxCSS\tox-progress.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_form.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_grid.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_mixins.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_reset.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_spacing.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_text.scss" />
-    <Content Include="WebsiteCSS\ToxCSS\_variables.scss" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AEapps.pubxml" />
@@ -131,6 +113,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
