@@ -8,7 +8,7 @@
             NavEnabledBTN = document.getElementById("HomeNavBTN");
             FooterEnabledBTN = document.getElementById("HomeFooterBTN");
             break;
-        case "Apps":
+        case "apps":
             NavEnabledBTN = document.getElementById("AppsNavBTN");
             FooterEnabledBTN = document.getElementById("AppsFooterBTN");
             break;

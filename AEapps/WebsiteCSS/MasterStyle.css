@@ -4,6 +4,10 @@
 }
 
 /*Body, Main, Footer Classes*/
+body {
+    height: 100%;
+}
+
 html, body, main {
     background-color: #212121;
     font-family: Asap;
@@ -13,26 +17,26 @@ html, body, main {
 main {
     max-width: 1250px !important;
     margin: auto !important;
-    padding-bottom: 3%;
-    padding: 25px 10px;
-    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 2.5%;
+    flex: 1 0 auto;
 }
 
-footer.footer {
-    background-color: #424242;
+footer {
+    background-color: #2F2F2F;
     padding: 10px;
 }
 
-div.footer {
-    line-height: 60px;
-    padding-top: 35px;
-    width: 100%;
-    bottom: 0;
+/*Grids, Columns, and Rows*/
+.col.Spaced {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding: 3%;
 }
 
 /*Navbar Classes And CSS*/
 .navbar-dark {
-    background-color: #424242;
+    background-color: #2F2F2F;
 }
 
 .navbar-list {
@@ -64,14 +68,14 @@ ul.navbar-list li {
     background-color: #323232;
 }
 
+.card-block {
+    margin: 15px;
+}
+
 .HorizSmallCard {
     flex: none !important;
     width: 350px !important;
     height: 475px !important;
-}
-
-.card-block {
-    margin: 15px;
 }
 
 img.AppIcon {
@@ -86,8 +90,8 @@ img.XamarinLogo {
 }
 
 img.FeatureGraphic {
-    padding-bottom: 5%;
-    padding-top: 3%;
+    padding-bottom: 4%;
+    padding-top: 1%;
     height: 25%;
     width: 100%;
     margin: 0px;
@@ -99,12 +103,19 @@ img.GooglePlayBadge {
     float: right;
 }
 
-blockquote {
-    color: #2966B1;
-}
-
+/*Text Classes*/
 p.Description {
     font-size: 18px;
+}
+
+p.CopyrightText {
+    padding-top: 18px;
+    font-size: 16px;
+    color: #626262;
+}
+
+blockquote {
+    color: #2966B1;
 }
 
 .blockquote-footer {
@@ -112,17 +123,13 @@ p.Description {
 }
 
 a.IconBTN {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: transparent;
 }
 
-/*Grid Specialized CSS*/
-.col.Spaced {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding: 3%;
-}
-
-.tox-progress {
-    margin: auto;
+/*Specialized Item CSS*/
+#IconHolder {
+    padding-bottom: 1%;
+    padding-top: 1.5%;
 }
