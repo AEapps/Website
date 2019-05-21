@@ -35,6 +35,8 @@
     <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
     <Content Include="Apps.html" />
+    <Content Include="Projects.html" />
+    <Content Include="Resume.html" />
     <Content Include="WebsiteCSS\Perico.min.css" />
     <Content Include="WebsiteImages\AppImages\VexIQTimer.png" />
     <Content Include="WebsiteImages\Icons\Clickables\Github.png" />

@@ -12,9 +12,17 @@
             NavEnabledBTN = document.getElementById("AppsNavBTN");
             FooterEnabledBTN = document.getElementById("AppsFooterBTN");
             break;
+        case "projects":
+            NavEnabledBTN = document.getElementById("ProjectsNavBTN");
+            FooterEnabledBTN = document.getElementById("ProjectsFooterBTN");
+            break;
         case "about":
             NavEnabledBTN = document.getElementById("AboutNavBTN");
             FooterEnabledBTN = document.getElementById("AboutFooterBTN");
+            break;
+        case "resume":
+            NavEnabledBTN = document.getElementById("ResumeNavBTN");
+            FooterEnabledBTN = document.getElementById("ResumeFooterBTN");
             break;
         case "contact":
             NavEnabledBTN = document.getElementById("ContactNavBTN");
