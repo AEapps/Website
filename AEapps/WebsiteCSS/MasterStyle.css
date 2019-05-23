@@ -11,6 +11,7 @@ html, body, main {
 }
 
 html, body {
+    font-weight: 200;
     height: 100%;
 }
 
@@ -55,7 +56,6 @@ ul.navbar-list li {
 
 .nav-link {
     color: rgba(255, 255, 255, 0.75);
-    font-family: Asap;
     font-size: 24px;
 }
 
@@ -76,13 +76,6 @@ ul.navbar-list li {
     flex: none !important;
     width: 350px !important;
     height: 475px !important;
-}
-
-h2.card-title-top {
-    padding-bottom: 0.75%;
-    padding-top: 2%;
-    font-size: 2em;
-    margin: auto;
 }
 
 img.card-img-top {
@@ -115,6 +108,18 @@ img.GooglePlayBadge {
 }
 
 /*Text Classes*/
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3, h4 {
+    font-weight: 700;
+}
+
 p.Description {
     font-size: 18px;
 }
@@ -125,22 +130,38 @@ p.CopyrightText {
     color: #626262;
 }
 
+a {
+    text-decoration: none !important;
+    color: #007bff;
+}
+
+    a.IconBTN {
+        padding-right: 12px;
+        padding-left: 12px;
+        color: transparent;
+        font-weight: bold;
+    }
+
 blockquote {
+    font-weight: bold;
     color: #2966B1;
 }
 
 .blockquote-footer {
+    font-weight: bold;
     color: #FFFFFF;
 }
 
-a {
-    text-decoration: none !important
+.blue-Text {
+    color: #007bff;
 }
 
-a.IconBTN {
-    padding-right: 12px;
-    padding-left: 12px;
-    color: transparent;
+.card-title-top {
+    padding-bottom: 0.75%;
+    font-weight: 700;
+    padding-top: 2%;
+    font-size: 2em;
+    margin: auto;
 }
 
 /*Specialized Item CSS*/
