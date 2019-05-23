@@ -78,6 +78,17 @@ ul.navbar-list li {
     height: 475px !important;
 }
 
+h2.card-title-top {
+    padding-bottom: 0.75%;
+    padding-top: 2%;
+    font-size: 2em;
+    margin: auto;
+}
+
+img.card-img-top {
+    padding: 1.5%;
+}
+
 img.AppIcon {
     width: 200px;
     height: 200px;

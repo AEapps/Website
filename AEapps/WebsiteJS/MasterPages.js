@@ -1,9 +1,18 @@
-﻿function UpdateCurrentPage() {
-    var PageName = document.title.replace("AEapps | ", "");
+﻿//Global Events
+$(window).on("load", selectNavbarPage);
 
+//Global Variables
+var CurrentPage = "";
+
+function selectNavbarPage() {
     var NavEnabledBTN = null;
     var FooterEnabledBTN = null;
-    switch (PageName.toLowerCase()) {
+
+    //Find the page name
+    CurrentPage = document.title.replace("AEapps | ", "");
+
+    //Select the correct tab
+    switch (CurrentPage.toLowerCase()) {
         case "home":
             NavEnabledBTN = document.getElementById("HomeNavBTN");
             FooterEnabledBTN = document.getElementById("HomeFooterBTN");
