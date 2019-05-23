@@ -133,6 +133,10 @@ blockquote {
     color: #FFFFFF;
 }
 
+a {
+    text-decoration: none !important
+}
+
 a.IconBTN {
     padding-right: 12px;
     padding-left: 12px;
@@ -143,4 +147,17 @@ a.IconBTN {
 #IconHolder {
     padding-bottom: 1%;
     padding-top: 1.5%;
+}
+
+#ResumeContainer {
+    padding-top: 2.5%;
+    margin: 0;
+}
+
+div.resumeSubTopic {
+    padding-bottom: 5%;
+}
+
+div.resumeTopic {
+    padding-bottom: 10%;
 }
