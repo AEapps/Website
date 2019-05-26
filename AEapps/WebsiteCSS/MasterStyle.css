@@ -193,9 +193,8 @@ hr {
 }
 
 h2.mobileResumeTopicHeader {
-    border-bottom: solid 2px var(--websiteDarkLineColor);
     text-align: center;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     padding-top: 0;
 }
 
