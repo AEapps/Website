@@ -76,118 +76,240 @@
                 <h4 class="Description">High School Student</h4>
             </div>
 
-            <div class="col text-xl-right">
+            <div class="col text-xl-right d-none d-lg-block d-xl-block">
                 <a class="btn-lg btn-light text-center" href="WebsiteContent/Resume2019.pdf" target="_blank">Download Resume</a>
             </div>
         </div>
 
         <div id="ResumeContainer" class="container">
-            <div id="Technology" class="row resumeTopic">
-                <div class="col-4">
-                    <h2>Technological Experience</h2>
-                </div>
+            <div id="StandardView" class="d-none d-lg-block d-xl-block">
+                <div id="Technology" class="row resumeTopic">
+                    <div class="col-4">
+                        <h2>Technological Experience</h2>
+                    </div>
 
-                <div class="col-4 col-auto">
-                    <div class="resumeSubTopic">
-                        <h4>Day-To-Day Comfort</h4>
+                    <div class="col-4 col-auto">
+                        <div class="resumeSubTopic">
+                            <h4>Day-To-Day Comfort</h4>
 
-                        <ul>
-                            <li>C#</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Java</li>
-                            <li>RobotC</li>
-                        </ul>
+                            <ul>
+                                <li>C#</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>Java</li>
+                                <li>RobotC</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-auto">
+                        <div class="resumeSubTopic">
+                            <h4>Experience With</h4>
+
+                            <ul>
+                                <li>SQL</li>
+                                <li>C++</li>
+                                <li>Typescript</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-4 col-auto">
-                    <div class="resumeSubTopic">
-                        <h4>Experience With</h4>
+                <hr />
 
-                        <ul>
-                            <li>SQL</li>
-                            <li>C++</li>
-                            <li>Typescript</li>
-                            <li>Javascript</li>
-                        </ul>
+                <div id="Education" class="row resumeTopic">
+                    <div class="col-4">
+                        <h2>Education</h2>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="resumeSubTopic">
+                            <h4>Calabasas High School</h4>
+                            <p class="text-muted">August 2016 ─ Present</p>
+
+                            <ul>
+                                <li>Expected to receive AP Capstone diploma in 2020</li>
+                                <li>Presented the Excellence Award in Robotics as a Freshman in 2017</li>
+                            </ul>
+                        </div>
+
+                        <div class="resumeSubTopic">
+                            <h4>Great Minds Robotics</h4>
+                            <p class="text-muted">April 2014 ─ Present</p>
+
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Neural Networks</li>
+                                <li>Data Structures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div id="Awards" class="row resumeTopic">
+                    <div class="col-4">
+                        <h2>Awards</h2>
+                    </div>
+
+                    <div class="col">
+                        <div class="resumeSubTopic">
+                            <h4>Congressional App Challenge</h4>
+                            <p class="text-muted">November 2018</p>
+
+                            <p>
+                                Honorable Mention in California’s 33rd Congressional District in the
+                                <a href="https://www.congressionalappchallenge.us/" target="_blank">
+                                    Congressional App Challenge.
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="resumeSubTopic">
+                            <h4>VEX IQ Worlds Championship</h4>
+                            <p class="text-muted">April 2016</p>
+
+                            <p>
+                                Placed 9th out of 200 teams who participated in the
+                                <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-16-3200.html" target="_blank">
+                                    VEX IQ Worlds Competition.
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="resumeSubTopic">
+                            <h4>VEX IQ U.S. Open Championship</h4>
+                            <p class="text-muted">April 2016</p>
+
+                            <p>
+                                Placed 1st in Teamwork Challenge and Robot Design of the 40 teams who participated in the
+                                <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-16-3999.html" target="_blank">
+                                    National Competition.
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <hr />
+            <div id="MobileView" class="d-block d-sm-none" style="padding-top: 10%;">
+                <div id="Technology-Mobile" class="resumeTopic">
+                    <div class="row">
+                        <h2 class="mobileResumeTopicHeader">Technological Experience</h2>
+                    </div>
 
-            <div id="Education" class="row resumeTopic">
-                <div class="col-4">
-                    <h2>Education</h2>
+                    <div id="Technology1" class="row">
+                        <div class="col-auto">
+                            <div class="resumeSubTopic">
+                                <h4>Day-To-Day Comfort</h4>
+
+                                <ul>
+                                    <li>C#</li>
+                                    <li>CSS</li>
+                                    <li>HTML</li>
+                                    <li>Java</li>
+                                    <li>RobotC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Technology2" class="row">
+                        <div class="col-auto">
+                            <div class="resumeSubTopic">
+                                <h4>Experience With</h4>
+
+                                <ul>
+                                    <li>SQL</li>
+                                    <li>C++</li>
+                                    <li>Typescript</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-auto">
-                    <div class="resumeSubTopic">
-                        <h4>Calabasas High School</h4>
-                        <p class="text-muted">August 2016 ─ Present</p>
+                <hr />
 
-                        <ul>
-                            <li>Expected to receive AP Capstone diploma in 2020</li>
-                            <li>Presented the Excellence Award in Robotics as a Freshman in 2017</li>
-                        </ul>
+                <div id="Education-Mobile" class="resumeTopic">
+                    <div id="Education1" class="row justify-content-center">
+                        <h2 class="mobileResumeTopicHeader">Education</h2>
                     </div>
 
-                    <div class="resumeSubTopic">
-                        <h4>Great Minds Robotics</h4>
-                        <p class="text-muted">April 2014 ─ Present</p>
+                    <div id="Education2" class="row">
+                        <div class="col-auto">
+                            <div class="resumeSubTopic">
+                                <h4>Calabasas High School</h4>
+                                <p class="text-muted">August 2016 ─ Present</p>
 
-                        <ul>
-                            <li>Machine Learning</li>
-                            <li>Neural Networks</li>
-                            <li>Data Structures</li>
-                        </ul>
+                                <ul>
+                                    <li>Expected to receive AP Capstone diploma in 2020</li>
+                                    <li>Presented the Excellence Award in Robotics as a Freshman in 2017</li>
+                                </ul>
+                            </div>
+
+                            <div class="resumeSubTopic">
+                                <h4>Great Minds Robotics</h4>
+                                <p class="text-muted">April 2014 ─ Present</p>
+
+                                <ul>
+                                    <li>Machine Learning</li>
+                                    <li>Neural Networks</li>
+                                    <li>Data Structures</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <hr />
+                <hr />
 
-            <div id="Awards" class="row resumeTopic">
-                <div class="col-4">
-                    <h2>Awards</h2>
-                </div>
-
-                <div class="col">
-                    <div class="resumeSubTopic">
-                        <h4>Congressional App Challenge</h4>
-                        <p class="text-muted">November 2018</p>
-
-                        <p>
-                            Honorable Mention in California’s 33rd Congressional District in the
-                            <a href="https://www.congressionalappchallenge.us/" target="_blank">
-                                Congressional App Challenge.
-                            </a>
-                        </p>
+                <div id="Awards-Mobile" class="resumeTopic">
+                    <div id="Awards1" class="row justify-content-center">
+                        <h2 class="mobileResumeTopicHeader">Awards</h2>
                     </div>
 
-                    <div class="resumeSubTopic">
-                        <h4>VEX IQ Worlds Championship</h4>
-                        <p class="text-muted">April 2016</p>
+                    <div id="Awards2" class="row">
+                        <div class="col">
+                            <div class="resumeSubTopic">
+                                <h4>Congressional App Challenge</h4>
+                                <p class="text-muted">November 2018</p>
 
-                        <p>
-                            Placed 9th out of 200 teams who participated in the
-                            <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-16-3200.html" target="_blank">
-                                VEX IQ Worlds Competition.
-                            </a>
-                        </p>
-                    </div>
+                                <p>
+                                    Honorable Mention in California’s 33rd Congressional District in the
+                                    <a href="https://www.congressionalappchallenge.us/" target="_blank">
+                                        Congressional App Challenge.
+                                    </a>
+                                </p>
+                            </div>
 
-                    <div class="resumeSubTopic">
-                        <h4>VEX IQ U.S. Open Championship</h4>
-                        <p class="text-muted">April 2016</p>
+                            <div class="resumeSubTopic">
+                                <h4>VEX IQ Worlds Championship</h4>
+                                <p class="text-muted">April 2016</p>
 
-                        <p>
-                            Placed 1st in Teamwork Challenge and Robot Design of the 40 teams who participated in the
-                            <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-16-3999.html" target="_blank">
-                                National Competition.
-                            </a>
-                        </p>
+                                <p>
+                                    Placed 9th out of 200 teams who participated in the
+                                    <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-16-3200.html" target="_blank">
+                                        VEX IQ Worlds Competition.
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="resumeSubTopic">
+                                <h4>VEX IQ U.S. Open Championship</h4>
+                                <p class="text-muted">April 2016</p>
+
+                                <p>
+                                    Placed 1st in Teamwork Challenge and Robot Design of the 40 teams who participated in the
+                                    <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-16-3999.html" target="_blank">
+                                        National Competition.
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
