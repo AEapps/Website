@@ -32,7 +32,6 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Fonts\OFL.txt" />
     <Content Include="Home.html" />
     <Content Include="Apps.html" />
     <Content Include="Projects.html" />
@@ -52,6 +51,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="WebsiteContent\Resume2019.pdf" />
+    <Content Include="Fonts\Roboto-Black.ttf" />
+    <Content Include="Fonts\Roboto-Bold.ttf" />
+    <Content Include="Fonts\Roboto-Medium.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -68,10 +70,6 @@
     <Content Include="WebsiteImages\AppImages\CongressCompanion.png" />
     <Content Include="WebsiteImages\Icons\AEapps-CircleIcon.png" />
     <Content Include="WebsiteImages\Icons\GooglePlayBadge.png" />
-    <Content Include="Fonts\Asap-Bold.ttf" />
-    <Content Include="Fonts\Asap-BoldItalic.ttf" />
-    <Content Include="Fonts\Asap-Italic.ttf" />
-    <Content Include="Fonts\Asap-Regular.ttf" />
     <Content Include="WebsiteImages\Logos\XamarinLogo.png" />
     <Content Include="WebsiteImages\Projects\BackpropVGenetics.png" />
     <Content Include="WebsiteJS\MasterPages.js" />

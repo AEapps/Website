@@ -9,19 +9,19 @@
 }
 
 @font-face {
-    src: url('../Fonts/Asap-Bold.ttf');
-    font-family: 'Asap';
+    src: url('../Fonts/Roboto-Medium.ttf');
+    font-family: 'Roboto';
 }
 
 /*Body, Main, Footer Classes*/
 html, body, main {
     background-color: var(--websiteBackground);
     color: var(--websiteTextColor);
-    font-family: Asap;
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 html, body {
-    font-weight: 200;
     height: 100%;
 }
 
@@ -36,6 +36,11 @@ footer {
     background-color: var(--websiteDark);
     margin-top: auto !important;
     padding: 10px;
+}
+
+/*Lists*/
+li {
+    font-size: 16px;
 }
 
 /*Grids, Columns, and Rows*/
@@ -58,6 +63,7 @@ footer {
 ul.navbar-list li {
     padding-right: 0.75em;
     padding-left: 0.75em;
+    font-weight: 900;
 }
 
 .nav-img {
@@ -172,6 +178,7 @@ blockquote {
 
 .blue-Text {
     color: var(--websiteBlue);
+    font-weight: 700;
 }
 
 .card-title-top {
