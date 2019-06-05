@@ -2,6 +2,7 @@
     --websiteCardBackground: rgba(47, 47, 47, 1);
     --websiteDarkLineColor: rgba(45, 45, 45, 1);
     --websiteTextColor: rgba(250, 250, 255, 1);
+    --websiteLightBlue: rgba(72, 146, 242, 1);
     --websiteBackground: rgba(50, 50, 54, 1);
     --websiteBlue: rgba(58, 117, 196, 1);
     --websiteDark: rgba(38, 38, 42, 1);
@@ -141,7 +142,7 @@ p.CopyrightText {
 
 a {
     text-decoration: none !important;
-    color: var(--websiteBlue);
+    color: inherit;
 }
 
     a.IconBTN {
@@ -149,6 +150,14 @@ a {
         padding-left: 12px;
         color: transparent;
         font-weight: bold;
+    }
+
+    a:hover {
+        color: inherit;
+    }
+
+    a.blue-Text:hover {
+        color: var(--websiteLightBlue);
     }
 
 blockquote {
