@@ -1,19 +1,30 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>AEapps | Apps</title>
     <link rel="shortcut icon" href="WebsiteImages/Icons/AEapps-CircleIcon.png" />
+
     <!--Add The Meta Data-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Add The Stylesheets-->
-    <link rel="stylesheet" href="Content/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--Add The Style Sheets-->
+    <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="WebsiteCSS/MasterStyle.css" />
+    <link rel="stylesheet" type="text/css" href="WebsiteCSS/Perico.min.css" />
+
     <!--Add The Javascript-->
-    <script src="/Scripts/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="/Scripts/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="/Scripts/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="/Bootstrap/JS/bootstrap.min.js"></script>
+    <script src="WebsiteJS/YearLabelUpdate.js"></script>
     <script src="WebsiteJS/MasterPages.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70949264-1"></script>
     <script>
@@ -30,6 +41,7 @@
         };
     </script>
 </head>
+
 <body onload="UpdateCurrentPage();">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -47,7 +59,8 @@
                 <a class="mx-auto" href="/Home.html">
                     <img src="/WebsiteImages/Icons/AEapps-CircleIcon.png" class="rounded-circle nav-img">
                 </a>
-                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+                    data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -72,8 +85,10 @@
                 <div class="card-block px-2">
                     <h3 class="card-title">Congress Companion</h3>
                     <p class="card-text">The perfect contact list for all your elected representatives!</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.aeapps.CongressCompanion&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
-                        <img class="GooglePlayBadge" alt="Get It On Google Play" src="WebsiteImages/Icons/GooglePlayBadge.png" />
+                    <a href="https://play.google.com/store/apps/details?id=com.aeapps.CongressCompanion&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                        target="_blank">
+                        <img class="GooglePlayBadge" alt="Get It On Google Play"
+                            src="WebsiteImages/Icons/GooglePlayBadge.png" />
                     </a>
                 </div>
             </div>
@@ -84,8 +99,10 @@
                 <div class="card-block px-2">
                     <h3 class="card-title">Vex IQ Timer</h3>
                     <p class="card-text">The best timer for the one minute VEX IQ match!</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.aeapps.VexIQTimer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
-                        <img class="GooglePlayBadge" alt="Get It On Google Play" src="WebsiteImages/Icons/GooglePlayBadge.png" />
+                    <a href="https://play.google.com/store/apps/details?id=com.aeapps.VexIQTimer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                        target="_blank">
+                        <img class="GooglePlayBadge" alt="Get It On Google Play"
+                            src="WebsiteImages/Icons/GooglePlayBadge.png" />
                     </a>
                 </div>
             </div>
@@ -100,8 +117,10 @@
                         <form class="form-inline" style="display: inline;">
                             <label class="sr-only" for="NewsletterEmailTxtBox">Email</label>
                             <center>
-                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox" placeholder="Email . . .">
-                                <button type="submit" class="btn-lg btn-primary mb-2" onclick="NewsletterSignUp();">Sign Up</button>
+                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox"
+                                    placeholder="Email . . .">
+                                <button type="submit" class="btn-lg btn-primary mb-2" onclick="NewsletterSignUp();">Sign
+                                    Up</button>
                             </center>
                         </form>
                     </div>
@@ -132,7 +151,8 @@
                             <a class="IconBTN" target="_blank" href="https://github.com/Amitai5">
                                 <img src="WebsiteImages/Icons/Clickables/GitHub.png" height="50" />
                             </a>
-                            <a class="IconBTN" target="_blank" href="https://play.google.com/store/apps/dev?id=6241397451561932193">
+                            <a class="IconBTN" target="_blank"
+                                href="https://play.google.com/store/apps/dev?id=6241397451561932193">
                                 <img src="WebsiteImages/Icons/Clickables/GooglePlay.png" height="50" />
                             </a>
                             <a class="IconBTN" target="_blank" href="https://www.instagram.com/aeapps/">
@@ -145,4 +165,5 @@
         </footer>
     </div>
 </body>
+
 </html>
