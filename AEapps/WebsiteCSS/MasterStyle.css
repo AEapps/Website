@@ -27,15 +27,16 @@ html, body {
 
 main {
     max-width: 1250px !important;
-    padding-bottom: 5%;
+    padding-bottom: 2.5%;
     padding-top: 2.5%;
+    min-height: auto;
     flex: 1 0 auto;
 }
 
 footer {
     background-color: var(--websiteDark);
-    margin-top: auto !important;
-    padding: 10px;
+    margin-top: auto;
+    height: auto;
 }
 
 /*Lists*/
