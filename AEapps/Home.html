@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>AEapps | Home</title>
     <link rel="shortcut icon" href="WebsiteImages/Icons/AEapps-CircleIcon.png" />
@@ -24,19 +25,17 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-70949264-1');</script>
+        gtag('config', 'UA-70949264-1');
+    </script>
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column" onload="loadSharedHTML();">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
                 <ul class="navbar-nav ml-auto text-center navbar-list">
                     <li class="nav-item">
                         <a id="HomeNavBTN" class="nav-link" href="Home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="ProjectsNavBTN" class="nav-link" href="Projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a id="AppsNavBTN" class="nav-link" href="Apps.html">Apps</a>
@@ -48,7 +47,8 @@
                 <a class="mx-auto" href="/Home.html">
                     <img src="/WebsiteImages/Icons/AEapps-CircleIcon.png" class="rounded-circle nav-img">
                 </a>
-                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+                    data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -59,9 +59,6 @@
                         <a id="AboutNavBTN" class="nav-link" href="About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a id="ResumeNavBTN" class="nav-link" href="Resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
                         <a id="ContactNavBTN" class="nav-link" href="Contact.html">Contact</a>
                     </li>
                 </ul>
@@ -70,12 +67,11 @@
     </header>
 
     <main role="main" class="container">
-        <center>
-            <img class="FeatureGraphic" src="WebsiteImages/Logos/AEapps-SloganIcon.png" />
-        </center>
+        <img class="FeatureGraphic" src="WebsiteImages/Logos/AEapps-SloganIcon.png" />
 
-        <div id="FeaturedApp" class="card flex-row flex-wrap">
-            <a href="https://play.google.com/store/apps/details?id=com.aeapps.CongressCompanion&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+        <div id="FeaturedApp">
+            <a href="https://play.google.com/store/apps/details?id=com.aeapps.CongressCompanion&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                target="_blank" class="card flex-row flex-wrap">
                 <div class="card-header border-0">
                     <img class="AppIcon" src="/WebsiteImages/AppImages/CongressCompanion.png">
                 </div>
@@ -85,7 +81,8 @@
                 </div>
                 <div class="card-footer w-100 text-muted">
                     <img class="XamarinLogo" alt="Made With Xamarin" src="WebsiteImages/Logos/XamarinLogo.png" />
-                    <img class="GooglePlayBadge" alt="Get It On Google Play" src="WebsiteImages/Icons/GooglePlayBadge.png" />
+                    <img class="GooglePlayBadge" alt="Get It On Google Play"
+                        src="WebsiteImages/Icons/GooglePlayBadge.png" />
                 </div>
             </a>
         </div>
@@ -100,16 +97,10 @@
                             <a id="HomeFooterBTN" class="nav-link" href="Home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ProjectsFooterBTN" class="nav-link" href="Projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
                             <a id="AppsFooterBTN" class="nav-link" href="Apps.html">Apps</a>
                         </li>
                         <li class="nav-item">
                             <a id="AboutFooterBTN" class="nav-link" href="About.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="ResumeFooterBTN" class="nav-link" href="Resume.html">Resume</a>
                         </li>
                         <li class="nav-item">
                             <a id="ContactFooterBTN" class="nav-link" href="Contact.html">Contact</a>
@@ -122,22 +113,17 @@
                 <a class="IconBTN" target="_blank" href="https://play.google.com/store/apps/dev?id=6241397451561932193">
                     <img src="WebsiteImages/Icons/Clickables/GooglePlay.png" height="52" />
                 </a>
-                <a class="IconBTN" target="_blank" href="https://github.com/Amitai5">
-                    <img src="WebsiteImages/Icons/Clickables/GitHub.png" height="52" />
-                </a>
                 <a class="IconBTN" target="_blank" href="mailto:contact@aeapps.net">
                     <img src="WebsiteImages/Icons/Clickables/Email.png" height="52" />
-                </a>
-                <a class="IconBTN" target="_blank" href="https://stackoverflow.com/users/7592170/amitai-erfanian">
-                    <img src="WebsiteImages/Icons/Clickables/StackOverflow.png" height="52" />
                 </a>
                 <a class="IconBTN" target="_blank" href="https://www.instagram.com/aeapps/">
                     <img src="WebsiteImages/Icons/Clickables/Instagram.png" height="52" />
                 </a>
             </div>
 
-            <p class="CopyrightText text-center">&copy; 2020 Amitai Erfanian. All rights reserved.</p>
+            <p class="CopyrightText text-center">&copy; 2020 AEapps LLC. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>
