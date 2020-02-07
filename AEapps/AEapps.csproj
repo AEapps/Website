@@ -34,8 +34,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Home.html" />
     <Content Include="Apps.html" />
-    <Content Include="Projects.html" />
-    <Content Include="Resume.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -50,10 +48,10 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="WebsiteContent\Resume2019.pdf" />
     <Content Include="Fonts\Roboto-Black.ttf" />
     <Content Include="Fonts\Roboto-Bold.ttf" />
     <Content Include="Fonts\Roboto-Medium.ttf" />
+    <None Include="AEapps.net.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -65,13 +63,11 @@
     <Content Include="WebsiteImages\Icons\Clickables\Email.png" />
     <Content Include="WebsiteImages\Icons\Clickables\Instagram.png" />
     <Content Include="WebsiteImages\Icons\Clickables\GooglePlay.png" />
-    <Content Include="WebsiteImages\Icons\Clickables\StackOverflow.png" />
     <Content Include="WebsiteImages\Logos\AEapps-SloganIcon.png" />
     <Content Include="WebsiteImages\AppImages\CongressCompanion.png" />
     <Content Include="WebsiteImages\Icons\AEapps-CircleIcon.png" />
     <Content Include="WebsiteImages\Icons\GooglePlayBadge.png" />
     <Content Include="WebsiteImages\Logos\XamarinLogo.png" />
-    <Content Include="WebsiteImages\Projects\BackpropVGenetics.png" />
     <Content Include="WebsiteJS\MasterPages.js" />
     <Content Include="WebsiteJS\YearLabelUpdate.js" />
     <None Include="packages.config" />

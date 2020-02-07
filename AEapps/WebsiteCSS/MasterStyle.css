@@ -1,229 +1,214 @@
 ﻿:root {
-    --websiteCardBackground: rgba(47, 47, 47, 1);
-    --websiteDarkLineColor: rgba(45, 45, 45, 1);
-    --websiteTextColor: rgba(250, 250, 255, 1);
-    --websiteLightBlue: rgba(72, 146, 242, 1);
-    --websiteBackground: rgba(50, 50, 54, 1);
-    --websiteBlue: rgba(58, 117, 196, 1);
-    --websiteDark: rgba(38, 38, 42, 1);
+  --websiteCardBackground: rgba(47, 47, 47, 1);
+  --websiteDarkLineColor: rgba(45, 45, 45, 1);
+  --websiteTextColor: rgba(250, 250, 255, 1);
+  --websiteLightBlue: rgba(72, 146, 242, 1);
+  --websiteBackground: rgba(50, 50, 54, 1);
+  --websiteBlue: rgba(58, 117, 196, 1);
+  --websiteDark: rgba(38, 38, 42, 1);
 }
 
 @font-face {
-    src: url('../Fonts/Roboto-Medium.ttf');
-    font-family: 'Roboto';
+  src: url("../Fonts/Roboto-Medium.ttf");
+  font-family: "Roboto";
 }
 
 /*Body, Main, Footer Classes*/
-html, body, main {
-    background-color: var(--websiteBackground);
-    color: var(--websiteTextColor);
-    font-family: Roboto;
-    font-weight: 500;
+html,
+body,
+main {
+  background-color: var(--websiteBackground);
+  color: var(--websiteTextColor);
+  font-family: Roboto;
+  font-weight: 500;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 main {
-    max-width: 1250px !important;
-    padding-bottom: 2.5%;
-    padding-top: 2.5%;
-    min-height: auto;
-    flex: 1 0 auto;
+  max-width: 1300px !important;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+  min-height: auto;
+  flex: 1 0 auto;
 }
 
 footer {
-    background-color: var(--websiteDark);
-    margin-top: auto;
-    height: auto;
+  background-color: var(--websiteDark);
+  margin-top: auto;
+  padding-top: 24px;
+  height: auto;
 }
 
 /*Lists*/
 li {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 /*Grids, Columns, and Rows*/
 .col.Spaced {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding: 3%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding: 3%;
 }
 
 /*Navbar Classes And CSS*/
 .navbar-dark {
-    background-color: var(--websiteDark);
+  background-color: var(--websiteDark);
 }
 
 .navbar-list {
-    padding-right: 2em;
-    padding-left: 2em;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 ul.navbar-list li {
-    padding-right: 0.75em;
-    padding-left: 0.75em;
-    font-weight: 900;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  font-weight: 900;
 }
 
 .nav-img {
-    max-width: 110px;
+  max-width: 110px;
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 28px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 28px;
 }
 
-    .nav-link.active {
-        background-color: transparent !important;
-    }
+.nav-link.active {
+  background-color: transparent !important;
+}
 
 /*Card, Image, And Form Classes*/
 .card {
-    background-color: var(--websiteCardBackground);
+  background-color: var(--websiteCardBackground);
 }
 
 .card-block {
-    margin: 15px;
+  margin: 15px;
 }
 
 .HorizSmallCard {
-    flex: none !important;
-    width: 350px !important;
-    height: 475px !important;
+  flex: none !important;
+  width: 375px !important;
+  height: 400px !important;
 }
 
 img.card-img-top {
-    padding: 1.5%;
+  padding: 1.5%;
 }
 
 img.AppIcon {
-    width: 200px;
-    height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 img.XamarinLogo {
-    width: 200px;
-    height: auto;
-    float: left
-}
-
-img.FeatureGraphic {
-    padding-bottom: 4%;
-    padding-top: 1%;
-    display: block;
-    width: 100%;
-    margin: 0px;
+  width: 180px;
+  height: auto;
+  float: left;
 }
 
 img.GooglePlayBadge {
-    width: 200px;
-    height: auto;
-    float: right;
+  width: 180px;
+  height: auto;
+  float: right;
+}
+
+img.FeatureGraphic {
+  padding-bottom: 4%;
+  padding-top: 1%;
+  display: block;
+  margin: auto;
+  width: 75%;
 }
 
 /*Text Classes*/
 h1 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 h2 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
-h3, h4 {
-    font-weight: 700;
+h3,
+h4 {
+  font-weight: 700;
 }
 
 p.Description {
-    text-align: justify;
-    margin-right: 2%;
-    margin-left: 2%;
-    font-size: 18px;
-    text-indent: 5%;
+  text-align: justify;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 18px;
+  text-indent: 5%;
 }
 
 p.CopyrightText {
-    padding-top: 18px;
-    font-size: 16px;
-    color: #626262;
+  padding-top: 18px;
+  font-size: 16px;
+  color: #626262;
 }
 
 a {
-    text-decoration: none !important;
-    color: inherit;
+  text-decoration: none !important;
+  color: inherit;
 }
 
-    a.IconBTN {
-        padding-right: 12px;
-        padding-left: 12px;
-        color: transparent;
-        font-weight: bold;
-    }
+a.IconBTN {
+  padding-right: 12px;
+  padding-left: 12px;
+  color: transparent;
+  font-weight: bold;
+}
 
-    a:hover {
-        color: inherit;
-    }
+a:hover {
+  color: inherit;
+}
 
-    a.blue-Text:hover {
-        color: var(--websiteLightBlue);
-    }
+a.blue-Text:hover {
+  color: var(--websiteLightBlue);
+}
 
 blockquote {
-    font-weight: bold;
-    color: #2966B1;
+  font-weight: bold;
+  color: #2966b1;
 }
 
 .blockquote-footer {
-    color: var(--websiteTextColor);
-    font-weight: bold;
+  color: var(--websiteTextColor);
+  font-weight: bold;
 }
 
 .blue-Text {
-    color: var(--websiteBlue);
-    font-weight: 700;
+  color: var(--websiteBlue);
+  font-weight: 700;
 }
 
 .card-title-top {
-    padding-bottom: 0.75%;
-    font-weight: 700;
-    padding-top: 2%;
-    font-size: 2em;
-    margin: auto;
+  padding-bottom: 0.75%;
+  font-weight: 700;
+  padding-top: 2%;
+  font-size: 2em;
+  margin: auto;
 }
 
 /*Other Items CSS*/
 hr {
-    background-color: var(--websiteDarkLineColor);
-    color: var(--websiteDarkLineColor);
-    border: none;
-    height: 2px;
+  background-color: var(--websiteDarkLineColor);
+  color: var(--websiteDarkLineColor);
+  border: none;
+  height: 2px;
 }
 
-/*Specialized Item CSS*/
-#IconHolder {
-    padding-bottom: 1%;
-    padding-top: 1.5%;
-}
-
-#ResumeContainer {
-    padding-top: 2.5%;
-    margin: 0;
-}
-
-h2.mobileResumeTopicHeader {
-    text-align: center;
-    padding-bottom: 2%;
-    padding-top: 0;
-}
-
-div.resumeSubTopic {
-    padding-bottom: 5%;
-}
-
-div.resumeTopic {
-    padding-bottom: 5%;
-    padding-top: 5%;
+.FeatureApp {
+  display: inline-block;
+  margin-right: 2%;
+  margin-left: 2%;
 }
