@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  src: url("../Fonts/Roboto-Medium.ttf");
+  src: url("/Fonts/Roboto-Medium.ttf");
   font-family: "Roboto";
 }
 
@@ -94,9 +94,18 @@ ul.navbar-list li {
 }
 
 .HorizSmallCard {
-  flex: none !important;
-  width: 375px !important;
+  float: none;
+  margin: 0 auto;
+  min-width: 400px;
   height: 400px !important;
+  margin-bottom: 2% !important;
+}
+
+/* Make the cards all a uniform size if on mobile */
+@media only screen and (max-width: 580px) {
+  .HorizSmallCard {
+    max-width: 400px !important;
+  }
 }
 
 img.card-img-top {
