@@ -1,38 +1,62 @@
-﻿@font-face {
-    src: url('../Fonts/Asap-Bold.ttf');
-    font-family: 'Asap';
+﻿:root {
+    --websiteCardBackground: rgba(47, 47, 47, 1);
+    --websiteDarkLineColor: rgba(45, 45, 45, 1);
+    --websiteTextColor: rgba(250, 250, 255, 1);
+    --websiteLightBlue: rgba(72, 146, 242, 1);
+    --websiteBackground: rgba(50, 50, 54, 1);
+    --websiteBlue: rgba(58, 117, 196, 1);
+    --websiteDark: rgba(38, 38, 42, 1);
+}
+
+@font-face {
+    src: url("/Fonts/Roboto-Medium.ttf");
+    font-family: "Roboto";
 }
 
 /*Body, Main, Footer Classes*/
-html, body, main {
-    background-color: #212121;
-    font-family: Asap;
-    color: #FFFFFF;
+html,
+body,
+main {
+    background-color: var(--websiteBackground);
+    color: var(--websiteTextColor);
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 main {
-    max-width: 1250px !important;
-    margin: auto !important;
-    padding-bottom: 3%;
-    padding: 25px 10px;
-    width: 100%;
+    max-width: 1300px !important;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+    flex: 1 0 auto;
 }
 
-footer.footer {
-    background-color: #424242;
-    padding: 10px;
+footer {
+    background-color: var(--websiteDark);
+    margin-top: auto;
+    padding-top: 24px;
+    height: auto;
 }
 
-div.footer {
-    line-height: 60px;
-    padding-top: 35px;
-    width: 100%;
-    bottom: 0;
+/*Lists*/
+li {
+    font-size: 16px;
+}
+
+/*Grids, Columns, and Rows*/
+.col.Spaced {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding: 4%;
 }
 
 /*Navbar Classes And CSS*/
 .navbar-dark {
-    background-color: #424242;
+    background-color: var(--websiteDark);
 }
 
 .navbar-list {
@@ -41,8 +65,9 @@ div.footer {
 }
 
 ul.navbar-list li {
-    padding-right: 1.5em;
-    padding-left: 1.5em;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    font-weight: 900;
 }
 
 .nav-img {
@@ -51,8 +76,7 @@ ul.navbar-list li {
 
 .nav-link {
     color: rgba(255, 255, 255, 0.75);
-    font-family: Asap;
-    font-size: 24px;
+    font-size: 28px;
 }
 
     .nav-link.active {
@@ -61,68 +85,138 @@ ul.navbar-list li {
 
 /*Card, Image, And Form Classes*/
 .card {
-    background-color: #323232;
-}
-
-.HorizSmallCard {
-    flex: none !important;
-    width: 350px !important;
-    height: 475px !important;
+    background-color: var(--websiteCardBackground);
 }
 
 .card-block {
     margin: 15px;
 }
 
+.HorizSmallCard {
+    float: none;
+    margin: 0 auto;
+    height: 400px !important;
+    margin-bottom: 3% !important;
+}
+
+/* Make the cards all a uniform size if on mobile */
+@media only screen and (max-width: 800px) {
+    .HorizSmallCard {
+        min-width: 100px;
+        max-width: 400px !important;
+    }
+}
+
+img.card-img-top {
+    padding: 1.5%;
+}
+
 img.AppIcon {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 img.XamarinLogo {
-    width: 200px;
+    width: 180px;
     height: auto;
-    float: left
-}
-
-img.FeatureGraphic {
-    padding-bottom: 5%;
-    padding-top: 3%;
-    height: 25%;
-    width: 100%;
-    margin: 0px;
+    float: left;
 }
 
 img.GooglePlayBadge {
-    width: 200px;
+    width: 180px;
     height: auto;
     float: right;
 }
 
-blockquote {
-    color: #2966B1;
+img.FeatureGraphic {
+    padding-bottom: 4%;
+    padding-top: 1%;
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+/*Text Classes*/
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3,
+h4 {
+    font-weight: 700;
 }
 
 p.Description {
+    text-align: justify;
+    margin-right: 2%;
+    margin-left: 2%;
     font-size: 18px;
+    text-indent: 5%;
+}
+
+p.CopyrightText {
+    padding-top: 18px;
+    font-size: 16px;
+    color: #626262;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+    a.IconBTN {
+        padding-right: 12px;
+        padding-left: 12px;
+        color: transparent;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: inherit;
+    }
+
+    a.blue-Text:hover {
+        color: var(--websiteLightBlue);
+    }
+
+blockquote {
+    font-weight: bold;
+    color: #2966b1;
 }
 
 .blockquote-footer {
-    color: #FFFFFF;
+    color: var(--websiteTextColor);
+    font-weight: bold;
 }
 
-a.IconBTN {
-    padding-right: 10px;
-    padding-left: 10px;
+.blue-Text {
+    color: var(--websiteBlue);
+    font-weight: 700;
 }
 
-/*Grid Specialized CSS*/
-.col.Spaced {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding: 3%;
-}
-
-.tox-progress {
+.card-title-top {
+    padding-bottom: 0.75%;
+    font-weight: 700;
+    padding-top: 2%;
+    font-size: 2em;
     margin: auto;
+}
+
+/*Other Items CSS*/
+hr {
+    background-color: var(--websiteDarkLineColor);
+    color: var(--websiteDarkLineColor);
+    border: none;
+    height: 2px;
+}
+
+.FeatureApp {
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 2%;
 }

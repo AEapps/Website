@@ -3,42 +3,36 @@
 
 <head>
     <title>AEapps | About</title>
-    <link rel="shortcut icon" href="WebsiteImages/Icons/AEapps-CircleIcon.png" />
+    <link rel="shortcut icon" href="WebsiteImages/Logos/AEapps-CircleIcon.png" />
 
     <!--Add The Meta Data-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Add The Style Sheets-->
-    <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
+    <!--Add The Stylesheets-->
+    <link rel="stylesheet" href="Content/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="WebsiteCSS/MasterStyle.css" />
-    <link rel="stylesheet" type="text/css" href="WebsiteCSS/Perico.min.css" />
+    <link href="https://hashdog.io/perico/stylesheets/perico.css" rel="stylesheet">
 
     <!--Add The Javascript-->
-    <script src="/Scripts/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="/Bootstrap/JS/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="/Scripts/jquery-3.4.1.slim.min.js"></script>
     <script src="WebsiteJS/YearLabelUpdate.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
     <script src="WebsiteJS/MasterPages.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70949264-1"></script>
-    <script>
+    <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
-        gtag('config', 'UA-70949264-1');
-    </script>
+        gtag('config', 'UA-70949264-1');</script>
 </head>
 
-<body onload="UpdateCurrentPage(); UpdateProgrammingLabels();">
+<body class="d-flex flex-column" onload="UpdateProgrammingLabels();">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
                 <ul class="navbar-nav ml-auto text-center navbar-list">
                     <li class="nav-item">
@@ -49,15 +43,17 @@
                     </li>
                 </ul>
             </div>
+
             <div class="mx-auto my-2 order-0 order-md-1 position-relative">
                 <a class="mx-auto" href="/Home.html">
-                    <img src="/WebsiteImages/Icons/AEapps-CircleIcon.png" class="rounded-circle nav-img">
+                    <img src="/WebsiteImages/Logos/AEapps-CircleIcon.png" class="rounded-circle nav-img">
                 </a>
                 <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
                     data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+
             <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
                 <ul class="navbar-nav mr-auto text-center navbar-list">
                     <li class="nav-item">
@@ -70,120 +66,62 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="container">
-        <div id="SmallBio" class="justify-content-center" style="padding-bottom: 4%;">
-            <h3>Amitai Erfanian</h3>
+
+    <main class="container">
+        <div id="MissionStatement" class="justify-content-center" style="padding-bottom: 4%;">
+            <h1 class="blue-Text">Our Mission</h1>
             <p class="Description">
-                If you're in a hurry to write your bio, and most people are, just use my easy fill-in-the-blank bio
-                template,
-                included in my e-book, and write your bio quickly, easily and with confidence. You can spend more time
-                on it
-                if you want, but you don't have to!Use this template to get you off to a quick start, and walk you
-                step-by-step
-                through the bio writing process. You'll be amazed by how easy it is, and by how quickly your bio comes
-                together.
-                If you're in a hurry to write your bio, and most people are, just use my easy fill-in-the-blank bio
-                template,
-                included in my e-book, and write your bio quickly, easily and with confidence. You can spend more time
-                on it
-                if you want, but you don't have to!Use this template to get you off to a quick start, and walk you
-                step-by-step
-                through the bio writing process. You'll be amazed by how easy it is, and by how quickly your bio comes
-                together.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, ullam distinctio.
+                Eum qui debitis facere sapiente velit rerum vero. Iusto aut consequuntur ducimus.
+                Voluptate sed distinctio nostrum nulla iure suscipit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Unde blanditiis vel obcaecati eius quae esse vero
+                earum soluta, suscipit tempora maiores temporibus commodi quod laborum dolorum
+                fugiat ullam possimus est!
             </p>
         </div>
-        <div id="ExpirienceDiagram" class="card card-dark row d-none d-lg-block" style="padding: 1%;">
-            <center>
-                <h3 id="ExpirienceLBL" class="card-title"></h3>
-            </center>
-            <div class="container card-body">
-                <div class="row">
-                    <div style="color: #649BD3;" class="col Spaced text-center">
-                        <!--C Plus Plus-->
-                        <i style="font-size: 72px;" class="perico-cplus"></i>
-                        <p id="CPlusPlusLBL" style="padding-top: 4px;" IntroYear="2017" class="Description">C++</p>
-                    </div>
-                    <div style="color: #F9DC3A;" class="col Spaced text-center">
-                        <!--Java Script-->
-                        <i style="font-size: 111px;" class="perico-js"></i>
-                        <p id="JavascriptLBL" style="padding-top: 4px;" IntroYear="2016" class="Description">Javascript
-                        </p>
-                    </div>
-                    <div style="color: #1E9E25;" class="col Spaced text-center">
-                        <!--C Sharp-->
-                        <i style="font-size: 150px;" class="perico-csharp"></i>
-                        <p id="CSharpLBL" style="padding-top: 4px;" IntroYear="2014" class="Description">C#</p>
-                    </div>
-                    <div style="color: #5083A2;" class="col Spaced text-center">
-                        <!--Java-->
-                        <i style="font-size: 111px;" class="perico-java"></i>
-                        <p id="JavaLBL" style="padding-top: 4px;" IntroYear="2015" class="Description">Java</p>
-                    </div>
-                    <div style="color: #F16528;" class="col Spaced text-center">
-                        <!--HTML-->
-                        <i style="font-size: 72px;" class="perico-html"></i>
-                        <p id="HTMLLBL" style="padding-top: 4px;" IntroYear="2016" class="Description">HTML5</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
     </main>
-    <div class="container-fluid footer">
-        <footer class="footer mt-0">
-            <div class="card-deck">
-                <div class="card card-dark">
-                    <div class="card-body">
-                        <h5 class="card-title">Subscribe Newsletter</h5>
-                        <form class="form-inline" style="display: inline;">
-                            <label class="sr-only" for="NewsletterEmailTxtBox">Email</label>
-                            <center>
-                                <input type="email" class="form-control-lg mb-2 mr-sm-2" id="NewsletterEmailTxtBox"
-                                    placeholder="Email . . .">
-                                <button type="submit" class="btn-lg btn-primary mb-2" onclick="NewsletterSignUp();">Sign
-                                    Up</button>
-                            </center>
-                        </form>
-                    </div>
-                </div>
-                <div class="card card-dark">
-                    <div class="card-body">
-                        <h5 class="card-title">Menu</h5>
-                        <ul class="nav nav-pills nav-fill">
-                            <li class="nav-item">
-                                <a id="HomeFooterBTN" class="nav-link" href="Home.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="AppsFooterBTN" class="nav-link" href="Apps.html">Apps</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="AboutFooterBTN" class="nav-link" href="About.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="ContactFooterBTN" class="nav-link" href="Contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card card-dark">
-                    <div class="card-body">
-                        <h5 class="card-title">Follow Us</h5>
-                        <div class="text-center">
-                            <a class="IconBTN" target="_blank" href="https://github.com/Amitai5">
-                                <img src="WebsiteImages/Icons/Clickables/GitHub.png" height="50" />
-                            </a>
-                            <a class="IconBTN" target="_blank"
-                                href="https://play.google.com/store/apps/dev?id=6241397451561932193">
-                                <img src="WebsiteImages/Icons/Clickables/GooglePlay.png" height="50" />
-                            </a>
-                            <a class="IconBTN" target="_blank" href="https://www.instagram.com/aeapps/">
-                                <img src="WebsiteImages/Icons/Clickables/Instagram.png" height="50" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
+    <footer>
+        <div class="container">
+            <div id="FooterNav" class="d-none d-lg-block d-xl-block">
+                <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+                    <ul class="text-center navbar-nav navbar-list justify-content-center">
+                        <li class="nav-item">
+                            <a id="HomeFooterBTN" class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="AppsFooterBTN" class="nav-link" href="Apps.html">Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="AboutFooterBTN" class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ContactFooterBTN" class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </footer>
-    </div>
+
+            <div id="IconHolder" class="text-center">
+                <a class="IconBTN" target="_blank" href="https://play.google.com/store/apps/dev?id=6241397451561932193">
+                    <img src="WebsiteImages/Icons/Clickables/GooglePlay.png" height="52" />
+                </a>
+                <a class="IconBTN" target="_blank" href="mailto:contact@aeapps.net">
+                    <img src="WebsiteImages/Icons/Clickables/Email.png" height="52" />
+                </a>
+                <a class="IconBTN" target="_blank" href="https://github.com/AEapps">
+                    <img src="WebsiteImages/Icons/Clickables/Github.png" height="52" />
+                </a>
+                <a class="IconBTN" target="_blank" href="https://www.instagram.com/AEapps/">
+                    <img src="WebsiteImages/Icons/Clickables/Instagram.png" height="52" />
+                </a>
+            </div>
+
+            <p class="CopyrightText text-center">&copy; 2020 AEapps. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
