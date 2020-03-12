@@ -43,8 +43,3 @@ function selectNavbarPage() {
     NavEnabledBTN.classList.add("active");
     FooterEnabledBTN.classList.add("active");
 };
-
-function NewsletterSignUp() {
-    var UserEmail = document.getElementById("NewsletterEmailTxtBox").value;
-    alert(UserEmail);
-}
